@@ -18,7 +18,7 @@ module Jekyll
     # have valid dates.
     QUERY = "select post_title, post_name, post_date, post_content, post_excerpt, ID, guid from nata3_posts where post_status = 'publish' and post_type = 'post'"
  
-    def self.process(posts_db, root, naMunr8r, host = 'localhost')
+    def self.process(dbname, user, pass, host = 'localhost')
       db = Sequel.mysql(dbname, :user => user, :password => pass, :host => host)
  
       FileUtils.mkdir_p "_posts"
