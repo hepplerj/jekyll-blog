@@ -1,14 +1,31 @@
----
-layout: default
-title: Jason Heppler - History in the Digital
----
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Jason Heppler - History in the Digital</title>
+   <meta name="author" content="Jason Heppler" />
+   <link href="http://feeds.feedburner.com/JasonHeppler" rel="alternate" title="Jason Heppler" type="application/atom+xml" />
 
-<div id="home">
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Typekit -->
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="/">Jason Heppler</a>
+    <a class="extra" href="/">home</a>
+  </div>
+  
+  <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+    
   </ul>
   
   <h1>Conferences, Talks, Etc</h1>
@@ -34,3 +51,29 @@ title: Jason Heppler - History in the Digital
 
 </div>
   
+
+  
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Jason Heppler<br />
+        Project Manager, William F. Cody Digital Archive<br />
+        jheppler.unl@gmail.com<br />
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/heppler/">github.com/heppler</a><br />
+        <a href="http://twitter.com/jaheppler/">twitter.com/jaheppler</a><br />
+      </p>
+    </div>
+    <div class="rss">
+      <a href="http://feeds.feedburner.com/JasonHeppler">
+        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
