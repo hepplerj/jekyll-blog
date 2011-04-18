@@ -10,6 +10,4 @@ Thanks!
 
 
 # Licensing #
-All the content (files and folders in _posts) along with the HTML files about and index are under the [Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 30)[1] license (in short, you're free to share the work for non-commerical purposes as long as you attribute it to me.)
-
-[1]:http://creativecommons.org/licenses/b-nc-nd/3.0/
+All the content (files and folders in _posts) along with the HTML files about and index are under the [Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 30)](http://creativecommons.org/licenses/b-nc-nd/3.0/) license (in short, you're free to share the work for non-commerical purposes as long as you attribute it to me.)
