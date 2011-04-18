@@ -12,39 +12,49 @@
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
-   <!-- Typekit -->
 </head>
 <body>
-
-<div class="site">
-  <div class="title">
-    <a href="/">Jason Heppler</a>
-    <a class="extra" href="/">home</a>
-  </div>
   
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Jason Heppler<br />
-        Project Manager, William F. Cody Digital Archive<br />
-        jheppler.unl@gmail.com<br />
-      </p>
+  <div id="container">
+    
+    <header class="menubar">
+      <a href="/">jasonheppler.org</a>
+      |
+      <a href="/about.html">colophon</a>
+      |
+      <a href="http://projects.jasonheppler.org">projects</a>
+      |
+      <a href="http://cv.jasonheppler.org">c.v.</a>
+      |
+      <a href="http://github.com/hepplerj">on github</a>
+      |
+      <a href="http://twitter.com/jaheppler">on twitter</a>
+    </header>
+    
+    <div id="main">
+      <article class="post">
+        <div class="content">
+          
+           {{ content }}
+         
+         </div>
+       </article>
+     </div>
+    
+     <div class="footer">
+       <p>Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>.</p>
+       <p>
+         Jason Heppler<br />
+         Historian, Technologist, Coder<br />
+         jheppler.unl@gmail.com
+        </p>
+        <p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons &mdash;
+            Attribution-NonCommercial-ShareAlike 3.0 Unported
+            &mdash; CC
+            BY-NC-SA
+            3.0">Some rights reserved</a>.</p>
+      </div>
+    
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/heppler/">github.com/heppler</a><br />
-        <a href="http://twitter.com/jaheppler/">twitter.com/jaheppler</a><br />
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/JasonHeppler">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
-</div>
-
 </body>
 </html>

@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<div id="post">
-{{ content }}
+<div id="post-{{ id }}" class="post">
+    <h2>{{ page.title }}</h2>
+    {{ content }}
 </div>
 
+<!--
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
@@ -13,3 +15,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+-->

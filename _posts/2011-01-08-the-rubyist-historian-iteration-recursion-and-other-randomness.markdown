@@ -11,13 +11,13 @@ We're entering the final leg of our journey.  We've covered a lot of topics in t
 
 A variable that is in all caps cannot be reassigned anywhere in the program.  For example, if you were writing a program that used Pi in its calculations, you wouldn't want the program (or yourself or another programmer) to accidentally override the value of Pi.  To prevent this, Ruby allows for constant variables.  We would simply write this in all caps:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 PI = 3.141592
-</pre>
+{% endhighlight %}
 
 We can now use the variable anywhere in the program without fear that it will be overridden by another variable.  For example, we could use Pi to calculate the area and circumference of a circle: 
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 PI = 3.141592
 
 puts "Enter a radius to calculate: "
@@ -30,21 +30,21 @@ puts "The area of the circle is: #{area}"
 circ = 2 * radius * PI
 circ = "%.4f" % circ
 puts "The circumference of the circle is: #{circ}"
-</pre>  
+{% endhighlight %}
 
 <h4>External Libraries</h4>
 
 In the last section we talked about modules and the ability to avoid namespace conflicts.  The other great thing about modules is there are literally thousands of modules that exist outside the Ruby system, written and (theoretically) tested by other programmers, but available for your use.  You probably saw an early version of this when we first talked about modules and the use of <code>Trig.rb</code> and <code>Morals.rb</code>.  <strong>Libraries</strong> operate by prefacing the call with <code>require</code> and then tell Ruby what we want included:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 require 'rubygems'
-</pre>
+{% endhighlight %}
 
 How do we know what's available to us as programmers?  By consulting either <a href="http://rubyforge.org/">RubyForge</a> or the <a href="http://raa.ruby-lang.org/">Ruby Application Archive</a> (see <a href="http://www.ruby-lang.org/en/libraries/">Ruby-Lang.org</a> for more). To use the libraries, you'll need to have a copy on your local system.  Many Ruby libraries are conveniently packaged under <a href="http://docs.rubygems.org/">Ruby Gems</a> and provides a standard formate for distributing Ruby programs and libraries.  Follow the <a href="http://www.ruby-lang.org/en/libraries/">instructions on Ruby-Lang.org</a> on how to download and install Ruby Gems.
 
 Perhaps one of the most useful libraries that Prof. Ramsay pointed our class to was the <code><a href="http://deveiate.org/projects/Linguistics/">linguistics</a></code> library:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 # linguistics.rb
 
 require 'rubygems'
@@ -55,29 +55,29 @@ Linguistics::use( :en )
 
 puts 185934538450.en.numwords
 # => one hundred and eighty-five billion, nine hundred and thirty-four million, five hundred and thirty-eight thousand, four hundred and fifty
-</pre>
+{% endhighlight %}
 
 Or maybe you want to know what the plural of "goose" is:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 Linguistics::use( :en )
 "goose".en.plural
 # => "geese"
-</pre>
+{% endhighlight %}
 
 Or maybe we have an array of farm animals:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 Linguistics::use( :en )
 animals = %w{dog cow ox chicken goose goat cow dog rooster llama pig goat dog cat cat dog cow goat goose goose ox alpaca}
 puts "The farm has: " + animals.en.conjunction
-</pre>
+{% endhighlight %}
 
 This will print: 
 
-<pre lang="text">
+{% highlight ruby %}
 The farm has: four dogs, three cows, three goats, two oxen, two geese, two cats, a chicken, a rooster, a llama, a pig, and an alpaca
-</pre>
+{% endhighlight %}
 
 You can <a href="http://deveiate.org/projects/Linguistics/wiki/English">do a lot</a> with <code>linguistics</code>.
 
@@ -86,7 +86,7 @@ Choose your external libraries carefully, but also don't reinvent the wheel if y
 <h4>Commenting</h4>
 Comment your code and comment it well.  We've already seen some of this in Ruby.  Commenting a single line in Ruby starts with a <code>#</code>.  But we can also write multi-line comments by putting our text between <code>=begin</code> and <code>=end</code>.  
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 # this is a single line comment
 
 =begin
@@ -96,7 +96,7 @@ And another
 
 Yet another
 =end
-</pre>
+{% endhighlight %}
 
 I frequently use single line comments for explaining what chunks of code are doing, while multi-line commenting is often useful for removing parts of code without actually deleting it.  This makes debugging much easier.  Be sure to use your commenting wisely by explaining what the code doesn't tell you.  When you define functions or classes or variables, it should be fairly clear what's going on.  But commenting on why you made the choices you made that will help you or another programmer better understand the code is worth including.  Remember: programming should be as much about readability as it is about its functionality.  Comment even if its code only you will be seeing.
 

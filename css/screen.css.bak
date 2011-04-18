@@ -14,19 +14,12 @@
 html, body {
   height: 100%;
 }
-/*
+
 body {
   background-color: white;
   font: 13.34px helvetica, arial, clean, sans-serif;
-} */
-
-body {
-  margin: 0;
-  padding: 0;
-  font: 15px Helvetica, sans-serif;
-  line-height: 1.7em;
-  color: black;
-  background: white;
+  *font-size: small;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,13 +34,21 @@ p {
   margin: 1em 0;
 }
 
+a {
+  color: #00a;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: #a0a;
+}
+
 table {
   font-size: inherit;
   font: 100%;
-}
-
-ul {
-  margin-bottom: 24px;
 }
 
 /*****************************************************************************/
@@ -76,31 +77,6 @@ ul.posts {
 /* Site
 /*
 /*****************************************************************************/
-
-header {
-  display: block;
-  padding-bottom: 3em;
-  padding-top: 0.3em;
-}
-
-#container {
-  width: 46em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menubar {
-  color: #aaa;
-  line-height: 1.3em;
-  margin-top: 0;
-  padding-top: 0;
-  font-size: 18px;
-}
-
-.menubar a {
-  color: #aaa;
-  text-decoration: none;
-}
 
 .site {
   font-size: 110%;
@@ -166,124 +142,6 @@ header {
         border: 0;
       }
 
-      a {
-        color: #aaa;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: #004491;
-      }
-
-      ul.posts {
-        list-style-type: none;
-      }
-
-      ul.posts li {
-        line-height: 1.75em;
-      }
-
-      ul.posts span {
-        color: #aaaaaa;
-        font-family: Monaco, "Courier New", monospace;
-        font-size: 80%;
-      }
-
-      .side {
-        margin-right: 0;
-        float: right;
-        width: 30%;
-      }
-      
-      .side h2 {
-        margin: 10px;
-        font-family: Helvetica, sans-serif;
-        font-weight: normal;
-        font-size: 25px;
-      }
-      
-      #navigation {
-        margin: 20px 0 0 0;
-      }
-      
-      #navigation ul {
-        margin: 0 0 5px 5px;
-        padding: 0;
-        list-style: none;
-      }
-      
-      #navigation li {
-        margin: 0;
-        padding-bottom: 6px;
-        list-style: none;
-      }
-      
-      #navigation a, #navigation a:link, #navigation a:visited, #navigation a:active {
-        color: #bebebe;
-        font-weight: normal;
-        text-decoration: none;
-        text-transform: lowercase;
-        font-size: 14px;
-        padding: 3px 5px;
-      }
-      
-      #navigation a:hover {
-        color: #004491;
-      }
-      
-article {
-  padding-bottom: 48px;
-}
-
-article {
-  display: block;
-}
-
-.content a {
-  color: #004491;
-  text-decoration: none;
-  border-bottom: 1px dotted #d3dfee;
-}
-
-.content a:hover {
-  color: black;
-}
-
-/*
-      .main {
-        margin-right: 3.8%;
-        padding: 50px 0 0 0;
-        float: left;
-        width: 60%;
-      }
-      
-      .main a {
-        color: #004491;
-        text-decoration: none;
-        border-bottom: 1px dotted #d3dfee;
-      }
-      
-      .main a:hover {
-        color: black;
-      }
-*/
-      .wrap {
-        background: white;
-        margin: 0;
-        padding: 0;
-      }
-
-      .content {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        overflow: hidden;
-      }
-
-      span.mid_head {
-        color: #004491;
-      }
-
 /*****************************************************************************/
 /*
 /* Posts
@@ -337,15 +195,3 @@ article {
   #related h2 {
     margin-bottom: 1em;
   }
-  
-/* 
- FOOTER
-*/
-
-.footer {
-  clear: both;
-  font-size: 13px;
-  margin: 10px 0 0;
-  overflow: hidden;
-  padding: 0 10px;
-}

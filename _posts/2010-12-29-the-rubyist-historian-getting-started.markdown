@@ -16,21 +16,26 @@ So why am I writing about Ruby? Why not some of the other languages I know, such
 
 All programming languages, like any foreign language, necessarily contain a learning curve.  For example, we could compare PHP with Ruby: they have similar structures, syntaxes, and the like, but PHP sometimes throws in syntaxes that require careful distinctions (the difference between <code>sprintf</code> and <code>printf</code>).  I believe that simplicity in the syntax of a language makes a huge difference in beginning programmers to grasp concepts.  I also greatly appreciate Ruby's simplicity.  I'm going to jump slightly ahead for the sake of making a comparison.  Let us say we wanted to create an array of authors for a bibliographic program.  In PHP, you might write:
 
-<pre lang="php">$authors = array("Hemingway" => 3, "Dickinson" => 1, "Whitman" => 2);
+{% highlight php %}
+$authors = array("Hemingway" => 3, "Dickinson" => 1, "Whitman" => 2);
 $keys = array_keys($authors);
 sort($keys);
-$sorted = array_slice($keys, 0, 3);</pre>
+$sorted = array_slice($keys, 0, 3);
+{% endhighlight %}
 
 We can achieve the same thing in Ruby much more simply:
 
-<pre lang="ruby">authors = { "Hemingway" => 3, "Dickinson" => 1, "Whitman" => 2 }
-sorted = authors.keys().sort().slice(0,3)</pre>
+{% highlight ruby %}
+authors = { "Hemingway" => 3, "Dickinson" => 1, "Whitman" => 2 }
+sorted = authors.keys().sort().slice(0,3)
+{% endhighlight %}
 
 Don't worry so much here about what exactly is going on, we'll get to that later.  But notice how much easier this is to read.  This has something to do with Ruby being a pure OOP (object-oriented programming) language versus PHP's bolt-on functionality.  The result is Ruby code that is much more readable.  But we're getting ahead of ourselves.  The point here is to illustrate the simplicity of the Ruby language.
 
 Ruby also handles blocks well.  Once again, lets compare PHP and Ruby.  Imagine we wanted to sort a list of authors.  In PHP, we would write:
 
-<pre lang="php">function sort_authors_by_count($a, $b)
+{% highlight php %}
+function sort_authors_by_count($a, $b)
   {
       if($a -> counts == $b -> counts)
       {
@@ -39,13 +44,16 @@ Ruby also handles blocks well.  Once again, lets compare PHP and Ruby.  Imagin
       return($a -> counts > $b -> counts) ? +1 : -1;
   }
 
-  usort($authors, "sort_authors_by_count");</pre>
+  usort($authors, "sort_authors_by_count");
+{% endhighlight %}
+
 Ruby blocks are chunks of code between <code>do . . . end</code>.  The Ruby syntax would look like this:
-<pre lang="ruby">
+
+{% highlight ruby %}
 authors.sort do |a, b|
       a.counts <=> b.counts
- end
-</pre>
+end
+{% endhighlight %}
 
 Once again, Ruby is much simpler.  Even if you're not exactly sure what is happening, it is much easier to look up the Ruby syntax of <code><=></code> rather than try and decipher <code>? +1 : -1</code>.
 
@@ -61,7 +69,7 @@ I'm writing this for people who have access to a UNIX environment.  If you are 
 
 You'll also need a good text editor that you know your way around in.  I work almost entirely in vim (or mvim).  You might check out emacs or nano, or do your programming outside the terminal using TextMate (Mac), gEdit (Linux), or Notepad++ (Windows), or any other number of text editors.  I would encourage you to find an editor that handles syntax highlighting, if only for making the code easier to read. And <a href="http://xkcd.com/378/">get ready for some battles</a>.
 
-You could also set up an IDE, or integrated development environment.  I would follow the steps in William Turkel's <em><a href="http://niche-canada.org/programming-historian">The Programming Historia</a></em><em><a href="http://niche-canada.org/programming-historian">n</a></em> to install Komodo Edit (but ignore the extensions for Firefox), with a few changes for the appropriate programming language.  I can also highly recommend NetBeans as a really useful IDE system if you prefer this route.  I won't be going through that setup here -- if you really want the instructions, drop me an email.
+You could also set up an IDE, or integrated development environment.  I would follow the steps in William Turkel's [The Programming Historian](http://niche-canada.org/programming-historian) to install Komodo Edit (but ignore the extensions for Firefox), with a few changes for the appropriate programming language.  I can also highly recommend NetBeans as a really useful IDE system if you prefer this route.  I won't be going through that setup here -- if you really want the instructions, drop me an email.
 
 <h4>Our First Program</h4>
 
@@ -69,29 +77,35 @@ Let's get started!  It is traditional to start programming in a new language by
 
 Continuing with our comparative approach, generating "hello world" is a fairly straightforward process in many languages.  In PHP, it looks like this:
 
-<pre lang="php">print("Hello world");</pre>
+{% highlight php %}
+print("Hello world");
+{% endhighlight %}
 
 Ruby operates similarly:
 
-<pre lang="ruby">puts "Hello world"</pre>
+{% highlight ruby %}
+puts "Hello world"
+{% endhighlight %}
 
 If you're running this in the interactive Ruby shell, you should see something like this:
 
-<pre lang="ruby">
+{% highlight ruby %}
 irb(main):001:0> puts "Hello world"
 Hello world
 => nil
-</pre>
+{% endhighlight %}
 
 If you're running Ruby files off a server or local disk, save the file as <code>hello.rb</code> and in the terminal run:
 
-<pre lang="text">ruby hello.rb</pre>
+{% highlight text %}
+ruby hello.rb
+{% endhighlight %}
 
 Note the lack of parens in my <code>puts</code> function.  Parentheses are absolutely accepted Ruby syntax, but you must make a choice between a parens or a space. <code>puts("Hello world")</code> and <code>puts "Hello world"</code> are the same thing, but you cannot do <code>puts ("Hello world")</code>. I tend to leave out parentheses unless I'm passing variables through a method.
 
 It is common practice to also include the "shebang" notation (<code>#!</code>) in the first line of the program, followed by introductory comments that usually include the name of the file, a description of what the program does, who wrote it and for what, and when it was last modified.  Commented text is marked by <code>#</code>.  For example, a "hello world" program might look like this:
 
-<pre lang="ruby" line="0">
+{% highlight ruby %}
 #!/usr/bin/ruby -w
 
 # helloworld.rb
@@ -105,29 +119,29 @@ It is common practice to also include the "shebang" notation (<code>#!</code>) i
 
 puts "Hello, world!"
 puts "I became a Ruby programmer on #{Time.now}"
-</pre>
+{% endhighlight %}
 
 Running <code>ruby helloworld.rb</code> in the terminal will return:
 
-<pre lang="text">
+{% highlight text %}
 Hello, world!
 I became a Ruby programmer on Tue Dec 28 21:21:43 -0600 2010
-</pre>
+{% endhighlight %}
 
 And there you have it, your first Ruby program!  But let's make things a little more interesting. Instead of just pushing static data, let's have Ruby work with data we give it through what's known as <a href="http://en.wikipedia.org/wiki/Standard_streams">standard streams</a>.  For this we're going to use the methods gets() and chomp():
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 puts "Please enter your name: "
 name = gets().chomp()
 
 puts "I, #{name}, began learning Ruby code on #{Time.now}."
-</pre>
+{% endhighlight %}
 
 This will print to the screen:
 
-<pre lang="text">
+{% highlight text %}
 I, Jason, began learning Ruby code on Tue Dec 28 21:21:43 -0600 2010.
-</pre>
+{% endhighlight %}
 
 Note the new notation <code>#{}</code>.  By asking for an input we are using what is called <strong>interpolation</strong>, or passing a variable into a string.  Variables are enclosed in <code>#{<em>var</em>}</code>. Take note that strings can be marked off by single or double quotes, but there is a distinction between their use.  In order to interpolate, you must use double quotes.  Single quotes will not allow interpolation, which has to do with Ruby attempting to optimize the code and [redacted boring technical jargon].  
 
