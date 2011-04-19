@@ -4,33 +4,35 @@ title: Jason Heppler - History in the Digital
 ---
 
 <div id="home">
+    <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="htp://cdrh.unl.edu">Center for Digital Research in the Humanities</a> at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a>. I'm interested in the history of computers, humanities computing, machine intelligence, digital history, and video games. The views expressed here are not those of any current or former employer.</p>
   <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 10 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+      <li>Visit the <a href="{{base.site_url}}/archives.html">Archive</a> &raquo;</li>
   </ul>
   
-  <h1>Conferences, Talks, Etc</h1>
+  <h1>Digital History</h1>
   <ul class="posts">
-    <li><span>Oct 2010</span> &raquo; <a href="">&quot;This Great and Sovereign Right&quot;: Eminent Domain, the Cherokee Nation, and Railroad Law, 1880-1890</a>
-    <li><span>Aug 2010</span> &raquo; <a href="#">William F. Cody and the Digital Frontier</a></li>
-    <li><span>Mar 2010</span> &raquo; <a href="">Framing Red Power: Newspapers and Native Activism during the Trail of Broken Treaties</a>
-    <li><span>Mar 2010</span> &raquo; <a href="">&quot;Another Wounded Knee Was Feared&quot;: Visualizing Newspaper Narratives of the Trail of Broken Treaties Caravan and American Indian Activism with Digital Tools</a>
-    <li><span>Oct 2009</span> &raquo; <a href="">Improving Writing in the US Survey Course</a>
+    <li><span>Apr 2011</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/cherokeerr/">&quot;This Great and Sovereign Right&quot;</a></li>
+    <li><span>Dec 2010</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/showindian/">Buffalo Bill's Wild West and the Progressive Image of American Indians</a></li>
+    <li><span>Jan 2010</span> &raquo; <a href="http://www.framingredpower.org/">Framing Red Power</a></li>
+    <li>See more on my <a href="http://projects.jasonheppler.org/">Projects page</a>.</li>
   </ul>
-
-  <h1>Recent Publications</h1>
+  
+  <h1>Publications</h1>
   <ul class="posts">
-      <li><span>2011</span> &raquo; &quot;The American Indian Movement as a Force in South Dakota Politics,&quot; <em>South Dakota's Political Culture</em>
-      <li><span>Dec 2010</span> &raquo; <a href="#">Buffalo Bill's Wild West and the Progressive Image of American Indians</a></li>
-      <li><span>Dec 2009</span> &raquo; <a href="">Framing Red Power: The Trail of Broken Treaties, the American Indian Movement, and the Politics of Media</a>
-   </ul>
+    <li><span>Jan 2011</span> &raquo; <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">The Rubyist Historian: Ruby Fundamentals for Humanist Scholars</a></li>
+    <li>See more in my <a href="http://cv.jasonheppler.org/">curriculum vitae</a>.</li>
+  </ul>
 
   <h1>Open Source Projects</h1>
   <ul class="posts">
-    <li><a href="">FREQr</a>: A simple word frequency generator written in Ruby.</li>
+    <li><a href="https://github.com/hepplerj/FREQr">FREQr</a>: A simple word frequency generator written in Ruby.</li>
+    <li><a href="https://github.com/hepplerj/Jekyllr">Jekyllr</a>: A simple Ruby script for generating markdown files for posting in Jekyll.</li>
+    <li>Hyde: A modification of Jekyll designed for building digital history archives/projects.</li>
+    <li>See more on my <a href="http://projects.jasonheppler.org/">Projects page</a>.</li>
   </ul>
 
 </div>
-  

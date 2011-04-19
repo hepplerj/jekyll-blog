@@ -102,6 +102,10 @@ header {
   text-decoration: none;
 }
 
+.menubar span {
+  color: #004491;
+}
+
 .site {
   font-size: 110%;
   text-align: justify;
@@ -296,37 +300,41 @@ article {
 
   /* standard */
 
-  #post pre {
+  .post pre, .post code {
+    font: 13px Consolas,'Andale Mono',Monaco,Courier,'Courier New',Verdana,sans-serif;
+  }
+
+  .post pre {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
   }
 
-  #post ul,
-  #post ol {
+  .post ul,
+  .post ol {
     margin-left: 1.25em;
   }
 
-  #post code {
+  .post code {
     border: 1px solid #ddd;
     background-color: #eef;
     font-size: 95%;
     padding: 0 .2em;
   }
 
-    #post pre code {
+    .post pre code {
       border: none;
     }
 
   /* terminal */
 
-  #post pre.terminal {
+  .post pre.console {
     border: 1px solid black;
     background-color: #333;
     color: white;
   }
 
-  #post pre.terminal code {
+  .post pre.console code {
     background-color: #333;
   }
 
