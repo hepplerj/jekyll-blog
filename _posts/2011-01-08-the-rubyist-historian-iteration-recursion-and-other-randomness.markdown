@@ -147,7 +147,7 @@ Now that you have the basics, you might want to learn more and start creating aw
 
 Next up, we're writing a program together.  We're going to build a word frequency generator and begin working with the web.
 
-<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/2010/12/10/the-rubyist-historian-the-series/">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
+<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
 
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 

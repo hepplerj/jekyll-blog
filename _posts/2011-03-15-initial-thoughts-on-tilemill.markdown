@@ -21,17 +21,17 @@ One great feature of TileMill is its simplicity: you are offered a single type o
 
 So, let's say we wanted to focus on the United States. We can reposition our map and zoom in a bit to get a better view of where we're working. We'll start off by defining some global colors that we can access throughout the stylesheet. Starting off with the <code>Map</code> background, we'll use a blue color to shade the oceans. We define global variables using the @ symbol, so we could write <code>@blue</code> and use, say, the hexidecimal code <code>#93b5cc</code> (so our final styling looks like <code>@blue: #93b5cc;</code>). We can set up the background color as:
 
-<pre lang="css" line="1">
+{% highlight css %}
 @blue: #93b5cc;
 
 Map {
   background-color: @blue;
 }
-</pre>
+{% endhighlight %}
 
 Let's also do some styling so the United States and country borders stand out a bit more, and fade out the focus on international countries. We'll take our world identification, add another global color we'll call @brown, and make the necessary changes under world to restyle country polygons:
 
-<pre lang="css" line="1">
+{% highlight css %}
 @blue: #93b5cc;
 @brown: #a38e72;
 
@@ -44,11 +44,11 @@ Map {
   line-width: 0.5;
   polygon-fill: @brown;
 }
-</pre>
+{% endhighlight %}
 
 Now let's have the United States stand out. TileMill uses unique country identification codes that allow you to apply specific MSS styling to countries:
 
-<pre lang="css" line="1">
+{% highlight css %}
 @blue: #93b5cc;
 @brown: #a38e72;
 @lightbrown: #ebdbc8;
@@ -65,7 +65,7 @@ Map {
   polygon-fill: @lightbrown;
   }
 }
-</pre>
+{% endhighlight %}
 
 <a href="http://www.jasonheppler.org/wp-content/uploads/2011/03/tilemill_us.png"><img src="http://www.jasonheppler.org/wp-content/uploads/2011/03/tilemill_us-300x169.png" alt="" title="tilemill_us" width="300" height="168" class="aligncenter size-medium wp-image-1374" /></a>
 

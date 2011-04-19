@@ -97,7 +97,7 @@ Hello world
 
 If you're running Ruby files off a server or local disk, save the file as <code>hello.rb</code> and in the terminal run:
 
-{% highlight text %}
+{% highlight console %}
 ruby hello.rb
 {% endhighlight %}
 
@@ -123,7 +123,7 @@ puts "I became a Ruby programmer on #{Time.now}"
 
 Running <code>ruby helloworld.rb</code> in the terminal will return:
 
-{% highlight text %}
+{% highlight console %}
 Hello, world!
 I became a Ruby programmer on Tue Dec 28 21:21:43 -0600 2010
 {% endhighlight %}
@@ -139,7 +139,7 @@ puts "I, #{name}, began learning Ruby code on #{Time.now}."
 
 This will print to the screen:
 
-{% highlight text %}
+{% highlight console %}
 I, Jason, began learning Ruby code on Tue Dec 28 21:21:43 -0600 2010.
 {% endhighlight %}
 
@@ -153,7 +153,7 @@ There you go! Your first Ruby program that works with user data. Up next, we're 
 <li><a href="http://patcanella.com/post/2134954107/understanding-ruby-basics">Understanding Ruby Basics</a></li>
 </ul>
 
-<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/2010/12/10/the-rubyist-historian-the-series/">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
+<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
 
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 

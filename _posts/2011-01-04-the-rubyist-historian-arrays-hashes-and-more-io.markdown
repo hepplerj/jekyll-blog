@@ -13,7 +13,7 @@ Ruby arrays and hashes are indexed collections that store objects.  Arrays and h
 
 Arrays are initiated between square brackets.  Inside of an array you can access individual elements by calling upon its index.  Note that Ruby begins its index with zero.
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 my_array = ["Ambrose", "White", "Worster"]
 
 # print the items in the array by calling
@@ -21,22 +21,22 @@ my_array = ["Ambrose", "White", "Worster"]
 puts my_array[0] # => Ambrose
 puts my_array[1] # => White
 puts my_array[2] # => Worster
-</pre>
+{% endhighlight %}
 
 There is no practical limit as to how many things an array can hold.  And, as mentioned above, there is no problem with mixing types of array elements.  You could just as easily write:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 my_array = [ 42, "books", 3.14 ]
 puts my_array[0] # => 42
 puts my_array[1] # => books
 puts my_array[2] # => 3.14
-</pre>
+{% endhighlight %}
 
 Note that strings must be enclosed in single or double quotes.
 
 Arrays also include two operators.  The first is <code>pop</code>, which removes the item on the right side (or, the end of the array).  The other is <code>shift</code>, which removes items on the left side (beginning) of the array.
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 my_array = ["Ambrose", "White", "Worster"]
 
 array_change = puts my_array.pop
@@ -44,22 +44,22 @@ array_change2 = puts my_array.shift
 
 puts array_change # => Worster
 puts array_change2 # => Ambrose
-</pre>
+{% endhighlight %}
 
 We can also add things to the array by using the <code>push</code> and <code>unshift</code> methods.  The <code>push</code> method adds items to the end (or right side of) the array while the <code>unshift</code> method adds things to the beginning of (or left side of) the array.
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 my_array = ["Ambrose", "White", "Worster"]
 
 array_new = my_array.push("Ulrich")
 array_new = my_array.unshift("West")
 
 puts "The array contains #{array_new.inspect}"
-</pre>
+{% endhighlight %}
 
 Arrays can also be created much more simply by using the shortcut <code>%w</code>, which removes the need for all those quotes and commas:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 # array-shortcut.rb
 
 a = [ 'Apple', 'Microsoft', 'Linux', 'Solaris' ]
@@ -71,11 +71,11 @@ a[1] # => "Microsoft"
 a = %w{ Apple Microsoft Linux Solaris }
 a[0] # => "Apple"
 a[1] # => "Microsoft"
-</pre>
+{% endhighlight %}
 
 We can create an empty array by calling <code>Array.new</code>.  The array is defining what objects must look like.  Remember that every class has a special method called <code>new</code>, and <code>new</code> is a special method called a <strong>constructor</strong>.  By calling <code>Array.new</code>, we're asking Ruby to create an empty object.  So, lets create an empty array and populate it with data:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 authors = Array.new
 
 authors.push("Hemingway")
@@ -83,7 +83,7 @@ authors.push("Faulkner")
 authors.push("Whitman")
 
 puts authors
-</pre>
+{% endhighlight %}
 
 The program should print the contents of the array to the screen.
 
@@ -93,7 +93,7 @@ Ruby hashes share similarities with arrays but operate differently and have diff
 
 So, lets say we wanted to map author ratings. The hash setup would look like this:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 authors = {
     'Hemingway'     =>   'five_stars',
     'Stephenson'    =>   'four_stars',
@@ -101,22 +101,22 @@ authors = {
     'Whitman'       =>   'five_stars',
     # key           =>    value
 }
-</pre>
+{% endhighlight %}
 
 The item to the left of <code>=></code> is the <strong>key</strong> while item on the right is its corresponding <strong>value</strong>.  Keys in a hash must be unique (we cannot have two "Stephenson," for example) but values can repeat.  Hashes are indexed with the same square brackets as arrays.  To print results from the above hash, we could write:
 
-<pre lang="ruby" line="12">
+{% highlight ruby %}
 puts authors['Whitman'] # => five_stars
 puts authors['Stephenson'] # => four_stars
-</pre>
+{% endhighlight %}
 
 Also, like arrays, you can create an empty hash with <code>Hash.new</code> and inject data into it.  For example:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 my_hash = Hash.new()
 
 hash['Dickenson'] = 'three_stars'
-</pre>
+{% endhighlight %}
 
 Hashes have one significant advantage over arrays: they use any object as an index.  And, if you're using Ruby 1.9, Ruby also remembers the order in which you add items to the hash.  When you iterate over entries, Ruby will return them in the correct order.  Hashes are a frequently used data structure in Ruby.
 
@@ -129,7 +129,7 @@ Hashes have one significant advantage over arrays: they use any object as an ind
 <li><a href="http://programmingbulls.com/ruby-hash">Ruby Hash</a>, Programming Bulls</li>
 </ul>
 
-<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/2010/12/10/the-rubyist-historian-the-series/">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
+<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
 
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 

@@ -7,11 +7,11 @@ wordpress_url: http://www.jasonheppler.org/?p=1185
 ---
 Late last year I released a word frequency generator into the wild on Github. I've since updated the program to a more advanced version.
 
-The <a href="http://www.jasonheppler.org/2010/11/28/freqr-a-command-line-word-frequency-generator/">original version</a> of FREQr generated word frequencies based on a text file. The new version can now read files off the web, which makes the program much more useful. The program also generates an HTML output of the frequencies for display within digital history projects. I've also added a new feature: word clouds. FREQr now also outputs a word cloud based on frequencies, also formatted for display on the web. <!--more-->
+The <a href="http://www.jasonheppler.org/2010/11/28/freqr-a-command-line-word-frequency-generator/">original version</a> of FREQr generated word frequencies based on a text file. The new version can now read files off the web, which makes the program much more useful. The program also generates an HTML output of the frequencies for display within digital history projects. I've also added a new feature: word clouds. FREQr now also outputs a word cloud based on frequencies, also formatted for display on the web.
 
 Here's the full code, or you can <a href="https://github.com/hepplerj/FREQr">download a copy</a> from Github:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 #!/usr/bin/ruby -w
  
 # FREQr.rb
@@ -110,4 +110,4 @@ end
 # Give the user an exported-to message
 # ====================================
 puts "\nFile exported to #{Dir.pwd}.\n"
-</pre>
+{% endhighlight %}

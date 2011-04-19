@@ -11,24 +11,24 @@ Our last segment introduced us to Ruby methods and classes.  This section will i
 
 Let's say we needed a program that printed numbers until it reached five.  In this case, we want the program to print a number, evaluate whether that number is equal to five, if not add one and run the program again.  Once the number is equal to five, the program terminates.  We achieve this through the use of the <code>while . . . end</code> loop:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 num = 0
 
 while num < 5
     puts num
     num += 1
 end
-</pre>
+{% endhighlight %}
 
 Running <code>ruby loop.rb</code> in the terminal will produce:
 
-<pre lang="text">
+{% highlight console %}
 0
 1
 2
 3
 4
-</pre>
+{% endhighlight %}
 
 Note the <code>+=</code> above. This symbol is called an <strong>operator</strong>, which allow us to compare values.  
 
@@ -64,7 +64,7 @@ Note the <code>+=</code> above. This symbol is called an <strong>operator</stron
 
 The <code>if . . . else</code> loop allows us to evaluate several branches of code in the order we write it.  If the first branch is false, the program moves on to the next and the next and so on until the value is true and terminates the program.  We could write a program that evaluates what a user thinks about the quality of a book, for example:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 puts "Enter a rating between one and five: "
 
 # we use .to_i to convert the string to an integer
@@ -77,7 +77,7 @@ elsif rank == 3
 elsif rank <= 2
     puts "The book stinks."
 end
-</pre>
+{% endhighlight %}
 
 Pro Tip: If you get stuck in a loop and the terminal won't quit printing to the screen, hit CTRL+C.  CTRL+C tells the terminal to stop whatever it's working on.
 
@@ -85,36 +85,36 @@ Pro Tip: If you get stuck in a loop and the terminal won't quit printing to the 
 
 So far we've looked at some pretty primitive versions of loop constructs.  Unlike Java, C, and C++, Ruby doesn't have a <code>for</code> loop.  Instead, it uses a less error-prone, built-in class functionality called <strong>iterators</strong>.  Let's say you just finished writing a section of a chapter and wanted some applause for your effort.  We could write a program to do that for you:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 3.times do 
    print "Clap! "
 end
-</pre>
+{% endhighlight %}
 
 Run the program from the terminal and it will produce:
 
-<pre lang="text">
+{% highlight console %}
 Clap! Clap! Clap!
-</pre>
+{% endhighlight %}
 
 There, now you and your computer just shared a special moment.  A pretty simple block of code, right? You could read what the program is doing even if you didn't understand a single line of Ruby: print "Clap!" three times, no more, no less.  Simplicity.
 
 We can also use iterators to loop through ranges.  Let's return to our number counter example above and write an iterator to print numbers between one and five:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 0.upto(5) do |x|
     print x, " "
 end
-</pre>
+{% endhighlight %}
 
 The most basic iterator in Ruby is simply <code>loop</code>, which will run the block forever until you break out of the loop:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 loop do
     print "85098357-198058903028340jj23u0280234itj3"
     # it's just like the Matrix!
 end
-</pre>
+{% endhighlight %}
 
 Hit CTRL+C to break the loop.
 
@@ -122,7 +122,7 @@ Hit CTRL+C to break the loop.
 
 Blocks contains a chunk of code normally enclosed between braces or within <code>do</code> and <code>end</code>.  The prevailing style is to use the braces for blocks that fit on a single line and <code>do . . . end</code> for multiple lines. Blocks are called only after the invocation of some method.  We could, for example, write a program that sums the squares of numbers inside of an array:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 sum = 0
 
 [2, 4, 6, 8].each do |value|
@@ -131,7 +131,7 @@ sum = 0
 end 
 
 puts sum
-</pre>
+{% endhighlight %}
 
 In this example, the block is being called by the <code>each</code> method once for each element in the array.  The element passed as the parameter is <code>value</code>.  Note also that although <code>sum</code> is defined outside of the block, it is also being modified within the block and then passed on to <code>puts</code>.  If a variable is inside a block with the same name as a variable outside of the block the two are the same, but if a variable appears only inside a block than the variable is local to the block.
 
@@ -143,7 +143,7 @@ As extra reading, I would check out Steve Ramsay's <a href="http://etext.lib.vir
 <li><a href="http://www.rubyist.net/~slagell/ruby/control.html">Control Structures</a>, Rubyist</li>
 </ul>
 
-<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/2010/12/10/the-rubyist-historian-the-series/">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
+<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
 
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 

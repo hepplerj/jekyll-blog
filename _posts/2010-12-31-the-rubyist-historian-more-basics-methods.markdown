@@ -11,17 +11,17 @@ In our last section I introduced some Ruby programming basics. Now we're moving 
 
 Notations like <code>gets()</code> and <code>chomp()</code> are called <strong>methods</strong>.  In our above example, <code>gets()</code> accepts a single line of data from the user and assigns the string to <code>name</code>. So how can we know what methods are available to us as programmers?  The all-knowing, all-powerful <a href="http://www.ruby-doc.org/">Ruby Docs</a>.  <code>gets</code> and <code>chomp</code> barely scratch the surface.  We can do things like count the number of characters or lines in a string or file, reverse the lines of a string or file, cut a string apart and join it in alphabetical order, or operate all methods on it at once.  For example:
 
-<pre lang="ruby" line="0">
+{% highlight ruby %}
 puts "I am a Rubyist Historian".length() #=> 24
 puts "Learning some Ruby-fu".reverse() #=> uf-ybuR emos gninraeL
 puts "Ruby is fracking awesomesauce.".split("").sort().join() #=>    .Raaabcceeefgiikmnorsssuuwy
-</pre>
+{% endhighlight %}
 
 Run this in the terminal and you should get the commented results.  For the first example, we would technically say that we are <em>invoking the length method on object "I am a Rubyist Historian."</em> (Or, even more abstractly, "I am a Rubyist Historian" is an <em>object of type string</em>.) Everything before the period is the <strong>receiver</strong> while everything after the period indicates the <strong>method(s)</strong> you wish to invoke upon the object.
 
 We can also create methods.  We'll return to our original "hello, name" program.  But this time we're going to write our own method and invoke it.  Methods are defined with the keyword <code>def</code> followed by the method name and the method's parameters between parentheses (parentheses here are optional, but I use them for readability's sake.  Remember, if you do not use parentheses you need to have a single space in its place, e.g., <code>name hello</code> is the same as <code>name(hello)</code>).  So to build a new "hello, name" program using a defined method, we could write:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 # defining function 'hello' to ask
 # for parameter 'name'
 def hello(name)
@@ -32,7 +32,7 @@ puts "Please enter your name: "
 name = gets.chomp
 
 puts hello(name)
-</pre>
+{% endhighlight %}
 
 NB: Indentations does not matter to Ruby, but for readability's sake, we include them.
 
@@ -46,17 +46,17 @@ Ruby classes are templates for creating new kinds of objects.  Classes are creat
 
 Let's say you wanted a program that allowed you to input author names and ISBNs.  First we define the class starting off the definition with <code>class</code> followed by the class name, capitalized:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 class Books
     # . . .
 end
-</pre>
+{% endhighlight %}
 
 We'll use the <code>initialize</code> method here, which allows programmers to set the state of constructed objects.  We store these as <strong>instance variables</strong> inside the object, which we incidate through the use of the <code>@</code> symbol. This makes variables visible within a class -- this is <strong>not</strong> a global variable.  But the instance variables means we can allow each object to have its own unique state.  <code>initialize</code> is a special method in Ruby.  Ruby allocates memory to hold <code>uninitialized</code> objects and then calls the object's <code>initialize</code> method.  The method passes any parameters that were passed to <code>new</code>.  
 
 Enough talk, let's write the code and explain things further:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 class Books
 
     attr_accessor :fname, :lname, :isbn
@@ -75,7 +75,7 @@ end
 
 author = Books.new("Walt", "Whitman", "1234567890")
 puts author
-</pre>
+{% endhighlight %}
 
 What we've done here is passed the instance variables <code>@fname</code>, <code>@lname</code>, and <code>@isbn</code> a string by calling the class constructor <code>Books</code> (<code>Books.new("Walt", "Whitman", "1234567890")</code>). We could just as easily said <code>Books.new("William", "Shakespeare", "1234567890")</code>. Note that <code>attr_accessor</code> is not declaring an instance variable, it's only creating the accessor methods.  Ruby decouples instance variables and accessor methods.
 
@@ -88,7 +88,7 @@ Note also that we redefined the <code>to string (.to_s)</code> type cast as well
 <li><a href="http://juixe.com/techknow/index.php/2007/01/22/ruby-class-tutorial/">Ruby Class Tutorial</a>, Juixe Techknow</li>
 </ul>
 
-<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/2010/12/10/the-rubyist-historian-the-series/">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
+<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
 
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 

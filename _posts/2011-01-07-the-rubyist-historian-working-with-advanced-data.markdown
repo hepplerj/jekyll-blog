@@ -13,16 +13,16 @@ When working with files, you have some options about how you want to access them
 
 Imagine we have a primary source document we would like to read.  You can <a href="https://github.com/hepplerj/rubyist-historian/blob/master/04-ArraysHashes/letter.txt">download this file</a> from Github to your local disk for something to work with (this is a letter from a Civil War soldier).  We're going to ask Ruby to read the file and print the results to the screen:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 File.open("letter.txt", "r") do |file|
     lines = file.readlines
     puts lines
 end
-</pre>
+{% endhighlight %}
 
 We could also print out specific lines of the array:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 File.open("letter.txt", "r") do |file|  # open the file and assign to variable 'file'
     
     line_array = file.readlines
@@ -34,13 +34,13 @@ end
 
 # Since we used the "r" specifier, Ruby will automatically close the
 # file.  Otherwise, you will need to exit the file using file.close().
-</pre>
+{% endhighlight %}
 
 The program will print the specified lines to the screen.
 
 We can also write to files using <code>File.new</code>:
 
-<pre lang="ruby" line="1">
+{% highlight ruby %}
 file = File.new("my_file.txt", "w")
 
 file.write("Hello, world!")
@@ -48,7 +48,7 @@ file.write("\n")
 file.write("I'm learning Ruby!")
 
 file.close()
-</pre>
+{% endhighlight %}
 
 After running the program. it will will create the file <code>my_file</code> in the directory you are working in.  The file should contain the contents we wrote.
 
@@ -61,7 +61,7 @@ You now know how to read and write files.  A whole new world of programming shou
 <li><a href="Ruby File Manipulation Basics">Ruby File Manipulation Basics</a>, Ben Woodall</li>
 </ul>
 
-<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/2010/12/10/the-rubyist-historian-the-series/">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
+<em>Visit the Rubyist Historian <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">Table of Contents</a> for more sections, and check out the <a href="https://github.com/hepplerj/rubyist-historian">Github repository</a> for an archive of all the code examples.</em>
 
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 
