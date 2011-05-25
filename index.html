@@ -4,13 +4,13 @@ title: Jason Heppler - History in the Digital
 ---
 
 <div id="home">
-    <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="htp://cdrh.unl.edu">Center for Digital Research in the Humanities</a> at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a>. I'm interested in the history of computers, humanities computing, machine intelligence, digital history, and video games. The views expressed here are not those of any current or former employer.</p>
+    <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> and a doctoral student in history at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a> focusing on the twentieth century North American West. I'm also interested in the history of computers, humanities computing, machine intelligence, and digital history. The views expressed here are not those of any current or former employer.</p>
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts limit: 10 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-      <li>Visit the <a href="{{base.site_url}}/archives.html">Archive</a> &raquo;</li>
+      <li>Visit the <a href="{{base.site_url}}/archives.html">Blog Archive</a> &raquo;</li>
   </ul>
   
   <h1>Digital History</h1>
@@ -31,7 +31,7 @@ title: Jason Heppler - History in the Digital
   <ul class="posts">
     <li><a href="https://github.com/hepplerj/FREQr">FREQr</a>: A simple word frequency generator written in Ruby.</li>
     <li><a href="https://github.com/hepplerj/Jekyllr">Jekyllr</a>: A simple Ruby script for generating markdown files for posting in Jekyll.</li>
-    <li>Hyde: A modification of Jekyll designed for building digital history archives/projects.</li>
+    <li>Archyde: A modification of Jekyll designed for building digital history archives/projects.</li>
     <li>See more on my <a href="http://projects.jasonheppler.org/">Projects page</a>.</li>
   </ul>
 
