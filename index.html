@@ -3,9 +3,13 @@ layout: default
 title: Jason Heppler - History in the Digital
 ---
 
+<a href="http://github.com/hepplerj/jekyll-blog">
+  <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on Github">
+</a>
+
 <div id="home">
     <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> and a doctoral student in history at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a> focusing on the twentieth century North American West. I'm also interested in the history of computers, humanities computing, machine intelligence, and digital history. The views expressed here are not those of any current or former employer.</p>
-  <h1>Blog Posts</h1>
+  <h2>Blog Posts</h2>
   <ul class="posts">
     {% for post in site.posts limit: 10 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -13,21 +17,21 @@ title: Jason Heppler - History in the Digital
       <li>Visit the <a href="{{base.site_url}}/archives.html">Blog Archive</a> &raquo;</li>
   </ul>
   
-  <h1>Digital History</h1>
+  <h2>Digital History</h2>
   <ul class="posts">
-    <li><span>Apr 2011</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/cherokeerr/">&quot;This Great and Sovereign Right&quot;</a></li>
-    <li><span>Dec 2010</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/showindian/">Buffalo Bill's Wild West and the Progressive Image of American Indians</a></li>
-    <li><span>Jan 2010</span> &raquo; <a href="http://www.framingredpower.org/">Framing Red Power</a></li>
+    <li><span>Project</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/cherokeerr/">&quot;This Great and Sovereign Right&quot;</a></li>
+    <li><span>Project</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/showindian/">Buffalo Bill's Wild West and the Progressive Image of American Indians</a></li>
+    <li><span>Project</span> &raquo; <a href="http://www.framingredpower.org/">Framing Red Power</a></li>
     <li>See more on my <a href="http://projects.jasonheppler.org/">Projects page</a>.</li>
   </ul>
   
-  <h1>Publications</h1>
+  <h2>Publications</h2>
   <ul class="posts">
     <li><span>Jan 2011</span> &raquo; <a href="http://www.jasonheppler.org/the-rubyist-historian-the-series.html">The Rubyist Historian: Ruby Fundamentals for Humanist Scholars</a></li>
     <li>See more in my <a href="http://cv.jasonheppler.org/">curriculum vitae</a>.</li>
   </ul>
 
-  <h1>Open Source Projects</h1>
+  <h2>Open Source Projects</h2>
   <ul class="posts">
     <li><a href="https://github.com/hepplerj/FREQr">FREQr</a>: A simple word frequency generator written in Ruby.</li>
     <li><a href="https://github.com/hepplerj/Jekyllr">Jekyllr</a>: A simple Ruby script for generating markdown files for posting in Jekyll.</li>
