@@ -39,14 +39,14 @@ Resources
 =========
 I consulted *many* sites and visited several Github repos in learning about Jekyll. Here a few of the best sites:
 
-[Paul Stamatiou](http://paulstamatiou.com/how-to-wordpress-to-jekyll)
+* [Paul Stamatiou](http://paulstamatiou.com/how-to-wordpress-to-jekyll)
 
-[Paul Craciunoiu](embrangler.com/2010/03/embrangler-moving-to-jekyll/)
+* [Paul Craciunoiu](embrangler.com/2010/03/embrangler-moving-to-jekyll/)
 
-[Tom Preston-Werner](tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)
+* [Tom Preston-Werner](tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)
 
-[Hardik Ruparel](blog.hardikr.com)
+* [Hardik Ruparel](blog.hardikr.com)
 
-[Chris Dzombak](chris.dzombak.name/blog/2011/02/moving-from-wordpress-to-jekyll)
+* [Chris Dzombak](chris.dzombak.name/blog/2011/02/moving-from-wordpress-to-jekyll)
 
-[Recursive Design](recursive-design.com/blog/2010/10/12/static-blogging-the-jekyll-way)
+* [Recursive Design](recursive-design.com/blog/2010/10/12/static-blogging-the-jekyll-way)

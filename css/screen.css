@@ -18,10 +18,10 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font: 15px 'Vollkorn', arial, serif;
-  line-height: 1.7em;
+  font: 11px Verdana, "Bitstream Vera Sans", sans-serif;
+  line-height: 1.8em;
   color: black;
-  background: white;
+  background: #e5e5e5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,7 +85,7 @@ header {
 }
 
 #container {
-  width: 46em;
+  width: 58em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +95,8 @@ header {
   line-height: 1.3em;
   margin-top: 0;
   padding-top: 0;
-  font-size: 18px;
+  font-size: 15px;
+  font: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Georgia, serif;
 }
 
 .menubar a {
@@ -245,9 +246,12 @@ article {
 }
 
 blockquote {
-    margin-left: 15px;
-    padding: 5px;
-    background: #eef; 
+  border-left: 1px solid #777;
+  border-right: 0px solid #777;
+  font-size: 1em;
+  margin: 0px 3em 0px 0px;
+  padding: 0px 0.75em 0px 1em;
+
 }
 
 .content a {
@@ -285,7 +289,7 @@ blockquote {
       }
 
       .content {
-        width: 100%;
+        width: 68%;
         max-width: 960px;
         margin: 0 auto;
         overflow: hidden;

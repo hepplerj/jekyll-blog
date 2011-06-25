@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Jason Heppler - History in the Digital
+description: Jason Heppler is a writer, historian, and technologist at the University of Nebraska-Lincoln.
+keywords: jason heppler,blog,html,css,ruby,rails,programming,web development,digital history
+change_frequency: daily
+priority: 1.0
 ---
 
 <a href="http://github.com/hepplerj/jekyll-blog">
@@ -8,15 +12,21 @@ title: Jason Heppler - History in the Digital
 </a>
 
 <div id="home">
-    <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> and a doctoral student in history at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a> focusing on the twentieth century North American West. I'm also interested in the history of computers, humanities computing, machine intelligence, and digital history. The views expressed here are not those of any current or former employer.</p>
-  <h2>Blog Posts</h2>
-  <ul class="posts">
-    {% for post in site.posts limit: 10 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-      <li>Visit the <a href="{{base.site_url}}/archives.html">Blog Archive</a> &raquo;</li>
-  </ul>
+   <!-- <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> and a doctoral student in history at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a> focusing on the twentieth century North American West. I'm also interested in the history of computers, humanities computing, machine intelligence, and digital history. The views expressed here are not those of any current or former employer.</p>-->
   
+  <div id="posts">
+  	{% for post in site.posts offset: 0 limit: 10 %}
+  		<h2>{{ post.title }}</h2>
+
+  	<article>
+         {{ post.content }}
+        <a href="http://jasonheppler.org{{ post.url }}">✚</a> {{ post.date | date_to_string }}
+       </article>
+      {% endfor %}
+
+  </div>
+  
+  <!--
   <h2>Digital History</h2>
   <ul class="posts">
     <li><span>Project</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/cherokeerr/">&quot;This Great and Sovereign Right&quot;</a></li>
@@ -38,5 +48,5 @@ title: Jason Heppler - History in the Digital
     <li>Archyde: A modification of Jekyll designed for building digital history archives/projects.</li>
     <li>See more on my <a href="http://projects.jasonheppler.org/">Projects page</a>.</li>
   </ul>
-
+-->
 </div>
