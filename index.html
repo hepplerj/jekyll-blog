@@ -12,22 +12,21 @@ priority: 1.0
 </a>
 
 <div id="home">
-   <!-- <p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> and a doctoral student in history at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a> focusing on the twentieth century North American West. I'm also interested in the history of computers, humanities computing, machine intelligence, and digital history. The views expressed here are not those of any current or former employer.</p>-->
-  
+   <!--<p>I'm Jason Heppler, a 20-something historian, technologist, husband, coder, and web-nerd. I'm the project manager of the William F. Cody Digital Archive at the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> and a doctoral student in history at the <a href="http://www.unl.edu">University of Nebraska-Lincoln</a> focusing on the twentieth century North American West. I'm also interested in the history of computers, humanities computing, machine intelligence, and digital history. The views expressed here are not those of any current or former employer.</p>-->
+
   <div id="posts">
-  	{% for post in site.posts offset: 0 limit: 10 %}
-  		<h2>{{ post.title }}</h2>
+  	{% for post in site.posts offset: 0 limit: 1 %}
+  		<h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <span class="postdate">{{ post.date | date_to_string }}</span></h2>
 
   	<article>
          {{ post.content }}
-        <a href="http://jasonheppler.org{{ post.url }}">&#8734;</a> {{ post.date | date_to_string }}
-       </article>
-      {% endfor %}
+    </article>
+  {% endfor %}
 
   </div>
-  
-  <!--
-  <h2>Digital History</h2>
+
+<!--
+ <h2>Digital History</h2>
   <ul class="posts">
     <li><span>Project</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/cherokeerr/">&quot;This Great and Sovereign Right&quot;</a></li>
     <li><span>Project</span> &raquo; <a href="http://segonku.unl.edu/~jheppler/showindian/">Buffalo Bill's Wild West and the Progressive Image of American Indians</a></li>
@@ -49,4 +48,7 @@ priority: 1.0
     <li>See more on my <a href="http://projects.jasonheppler.org/">Projects page</a>.</li>
   </ul>
 -->
+
+See <a href="/archives.html">older posts</a>.
+
 </div>
