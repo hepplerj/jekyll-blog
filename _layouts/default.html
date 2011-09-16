@@ -6,7 +6,7 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Podkova&v2' rel='stylesheet' type='text/css'>
-  
+
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
    <meta name="author" content="Jason Heppler" />
@@ -20,62 +20,38 @@
 
 </head>
 <body>
-  <header class="menubar">
-    <div id="container">
-        <a href="/">History<span>inthe</span>Digital</a>
-        <div class="subhead_desc">a daybook of history and technology</div>
-    </div>
-  </header>
-  
-  <div id="clear"></div>
-  
-  <div id="primary">
-    <div class="inside">
-      <div class="primary">
-        <article class="post">
-          <div class="content">
-            {{ content }}
-            <br />
-          </div>
-        </article>
-        
+  <div id="container">
+
+    <div id="content">
+
+      <div class="entry">
+      {{ content }}
       </div>
-      
+
+      <section id="sidebar">
+        <h1><a href="/">jasonheppler.org</a></h1>
+        <p class="tagline">history in the digital</p>
+
+        <ul>
+          <li><a href="about.html">colophon</a></li>
+          <li><a href="archives.html">archive</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="http://projects.jasonheppler.org">projects</a></li>
+          <li><a href="http://cv.jasonheppler.org">c.v.</a></li>
+        </ul>
+      </section>
+
+    </div>
+
       <div class="footer">
          <p>Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>.</p>
-         <p>Jason Heppler | Historian, Writer, Coffee Enthusiast | jheppler.unl@gmail.com</p>
+         <p>Jason Heppler | Historian, Writer, Technologist, Coffee Enthusiast | jheppler.unl@gmail.com</p>
 
           <p>
           <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
           </p>
-
-        </div>
-        
-    </div>
-    
-    <div id="sidebar">
-      <div class="nav">
-      <ul>
-        <li><a href="/about.html">colophon</a></li>
-        <li><a href="/archives.html">archive</a></li>
-        <li><a href="/contact.html">contact</a></li>
-        <li><a href="http://projects.jasonheppler.org">projects</a></li>
-        <li><a href="http://cv.jasonheppler.org">c.v.</a></li>
-        <li><a href="http://github.com/hepplerj">on github</a></li>
-        <li><a href="http://twitter.com/jaheppler">on twitter</a></li>
-        <li><a href="http://blog.jasonheppler.org">on tumblr</a></li>
-      </ul>
-      </div>
-    </div>
-    
   </div>
-  
-  
 
-  
-  </div>
-  
-  
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -89,6 +65,7 @@
     })();
 
   </script>
-  
+
+
 </body>
 </html>
