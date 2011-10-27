@@ -15,14 +15,14 @@ Notational Velocity (or the fork I use, [nvALT](http://brettterpstra.com/project
 
 The entire system makes it very easy to focus on writing. You don't need to click "New File" or anything else -- simply type in the new file you'd like to create and hit Return and you're ready to go. You never have to use the mouse, even; just hit Cmd-L and your cursor is placed in the location bar. Type in your file, press Return, and start writing.
 
-## My Setup ##
+### My Setup ###
 
 My setup is pretty simple. Here a few things I've done with my setup:
 
 1. Under Preferences, I've set up Notational Velocity to store everything as plain text files. Plain text, after all, is [the most portable, the most searchable, the most light weight medium for your writing](http://www.practicallyefficient.com/2011/07/21/word-internet/). I can work on my writing on my laptop, or access the files on my phone if I need to.
 2. I use to have the system synchronize with Simplenote, but I've turned this feature off recently. Instead, I have all of my notes synchronized to Dropbox. Everything is backed up and with me where ever I have an internet connection.
 
-## Usage ##
+### Usage ###
 
 Now here comes the geeky side of things. My system is very similar to the [system used by Merlin Mann](http://macpowerusers.com/2011/03/mpu-046-workflows-with-merlin-mann-ii/):
 

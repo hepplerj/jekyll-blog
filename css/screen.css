@@ -9,21 +9,25 @@
 html, body {
   height: 100%;
 }
-/*
 body {
-  background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
-} */
-
-body {
-  font-family: 'Helvetica neue', Helvetica, sans-serif;
-  font-size: 14px;
-  color: #333;
-  padding: 10px;
+    background: white;
+    font: 11pt palatino, "times new roman", serif;
+    color: #333;
+    line-height: 1.1;
 }
 
+/*
+body {
+  font-family: 'Helvetica neue', Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #222;
+  padding: 10px;
+  line-height: 26px;
+}
+*/
+
 h1, h2, h3, h4, h5, h6 {
-  color: #444;
+  color: #222;
   font-style: normal;
 }
 
@@ -34,11 +38,11 @@ h1 {
   margin: 30px 0 0 0;
   letter-spacing: 0.7px;
   line-height: 18px;
+
 }
 
 h2 {
-    font-size: 1.7em;
-    color: #333;
+    font-size: 1.5em;
     padding: 0;
     font-weight: normal;
 }
@@ -48,18 +52,13 @@ p {
 }
 
 a {
-    color: #333;
+    color: #C00; /*#67d8f1;*/ /*#B5190E;*/
     text-decoration: none;
-    border-width: 0 0 0 0;
-    border-style: none;
 }
 
 a:hover {
-    color: #999;
-    text-decoration: none;
-    border: 0;
-    border-width: 0 0 0 0;
-    border-style; none;
+    color: #222;
+    text-decoration: underline;
 }
 
 table {
@@ -98,11 +97,65 @@ ul.posts {
 /*
 /*****************************************************************************/
 
+#mainNav {
+  margin-top: 10px;
+  padding: 5px;
+  background: #fbfbfb;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+#mainNav ul {
+  margin: 0 auto;
+  width: 25em;
+  text-align: center;
+  list-style: none;
+}
+
+#mainNav li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#mainNav a:link, #mainNav a:visited {
+  color: #999;
+  white-space: nowrap;
+}
+
+#mainNav a:hover, #mainNav a:active {
+  text-decoration: underline;
+  color: #222;
+}
+
+#siteDesc {
+  font-size: 0.9em;
+  margin: 20px auto 25px;
+  width: 400px;
+  padding: 11px 0 13px;
+  color: #999;
+  font-style: italic;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#postmeta {
+  text-align: center;
+}
+
+#reader {
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  font-size: 10pt;
+}
+
 header {
   display: block;
   padding-bottom: 3em;
   padding-top: 0.3em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   text-transform: uppercase;
 }
 
@@ -118,25 +171,42 @@ header #nav ul, #nav li {
   padding: 0;
   list-style: none;
 }
-/*
-#container {
-  width: 740px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+
+#header h1 {
+  font-weight: bold;
 }
-*/
+
+#header a {
+  text-decoration: none;
+  color: #222;
+}
+
+#header span {
+  color: #C00 /*#B5190E*/;
+}
 
 a.old-posts {
     font-size: 22px;
-    color: #cccccc;
+    color: #ccc;
     margin-left: 15px;
-    border: 0;
+    border: none;
+    text-decoration: none;
+}
+
+a:hover.old-posts {
+  color: #444;
 }
 
 #container {
-    width: 70%;
-    margin: auto;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    position: relative;
+}
+
+time {
+    color: #888;
 }
 
 .menubar {
@@ -378,13 +448,25 @@ blockquote {
 
 #content {
     overflow: hidden;
-    width: 1000px;
     margin: auto;
 }
 
 section#sidebar {
     float: right;
-    width: 300px;
+    width: 250px;
+}
+
+section#sidebar p {
+    font-size: 14px;
+}
+
+section#sidebar h1 a {
+   color: #444;
+   text-decoration: none;
+}
+
+section#sidebar h1 a:hover {
+    color: #ccc;
 }
 
 section#sidebar ul {
@@ -400,46 +482,53 @@ section#sidebar ul li {
     line-height: 24px;
 }
 
+section#sidebar ul li a {
+    text-decoration: none;
+    color: #444;
+}
+
+section#sidebar ul li a:hover {
+    color: #ccc;
+}
+
 p.tagline {
     padding: 0;
     margin: 6px 0 60px 0;
-    font-size: 95%;
-    color: #004491;
+    color: #B5190E;
     letter-spacing: 3px;
-    font-family: Helvetica, sans-serif;
+  /*  font-family: Helvetica, sans-serif;*/
 }
 
 .entry {
-    width: 60%;
     float: left;
-    margin: auto;
+    width: 550px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.entry h2 {
+    margin-top: 2em;
+    margin-bottom: -0.6em;
+}
+
+.entry h2 a {
+    text-decoration: none;
+    color: #222;
+    border: none;
 }
 
 
-/*
-.content h2 a {
-  color: #004491;
-  text-decoration: none;
+.entry h2 a:hover {
+  color: #222;
+  border: none;
 }
 
-.content h2 a:hover {
-  color: black;
-}
-*/
-.entry a:link {
-  color: #303030;
-  text-decoration: none;
-  border-width: 0 0 1px 0;
-  border-style: none none solid none;
-  border-color: silver;
+.entry h2.post {
+    color: #444;
 }
 
-.entry a:hover {
-  color: #999;
-  text-decoration: none;
-  border: 0;
-  border-width: 0;
-  border-style: none;
+.entry h2.short {
+
 }
 
       .wrap {
@@ -447,11 +536,6 @@ p.tagline {
         margin: 0;
         padding: 0;
       }
-
- /*     .content {
-        margin: 0 auto;
-        overflow: hidden;
-      } */
 
       span.mid_head {
         color: #004491;
@@ -482,36 +566,36 @@ li.archive_list {
 
   /* standard */
 
-  .post pre, .post code {
+  pre, code {
     font: 13px Consolas,'Andale Mono',Monaco,Courier,'Courier New',Verdana,sans-serif;
   }
 
-  .post pre {
+  pre {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
   }
 
-  .post code {
+  code {
     border: 1px solid #ddd;
     background-color: #eef;
     font-size: 95%;
     padding: 0 .2em;
   }
 
-    .post pre code {
+    pre code {
       border: none;
     }
 
   /* terminal */
 
-  .post pre.console {
+  pre.console {
     border: 1px solid black;
     background-color: #333;
     color: white;
   }
 
-  .post pre.console code {
+  pre.console code {
     background-color: #333;
   }
 
@@ -532,6 +616,22 @@ li.archive_list {
   margin: 10px 0 0;
   overflow: hidden;
   padding: 0;
-  font-size: 11px;
 }
 
+.footer .footernav {
+  font-size: 12pt;
+}
+
+.footer p {
+    line-height: 0.3em;
+}
+
+#footerinfo {
+  width: 600px;
+  margin: 40px auto 0;
+  padding: 20px 0 35px 0;
+  border-top: 4px double #ccc;
+  color: #666;
+  text-align: center;
+  font-size: 9pt;
+}

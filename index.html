@@ -8,10 +8,11 @@ priority: 1.0
 ---
 
   {% for post in site.posts offset: 0 limit: 1 %}
-    <h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <span class="postdate">{{ post.date | date_to_string }}</span></h2>
+  <div id="postmeta">
+  <h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a></h2>
+  <p><time>{{ post.date | date: "%e" | ordinalize }} {{post.date | date: "%B"}} {{post.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
+  </div>
 
     {{ post.content }}
-  {% endfor %}
 
-<br />
-<a class="old-posts" href="/archives.html">See older posts</a>
+  {% endfor %}

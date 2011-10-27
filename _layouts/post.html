@@ -2,17 +2,15 @@
 layout: default
 ---
 <div id="post-{{ id }}" class="post">
+  <div id="postmeta">
     <h2>{{ page.title }}</h2>
+    <p><em>by Jason Heppler, {{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} 
+    {{page.date | date: "%Y"}}</em></p>
+  </div>
+  
+  <div id="reader">
+    <a href="javascript:(%28function%28%29%7Bwindow.baseUrl%3D%27https%3A//www.readability.com%27%3Bwindow.readabilityToken%3D%27%27%3Bvar%20s%3Ddocument.createElement%28%27script%27%29%3Bs.setAttribute%28%27type%27%2C%27text/javascript%27%29%3Bs.setAttribute%28%27charset%27%2C%27UTF-8%27%29%3Bs.setAttribute%28%27src%27%2CbaseUrl%2B%27/bookmarklet/read.js%27%29%3Bdocument.documentElement.appendChild%28s%29%3B%7D%29%28%29)">Readability</a> | <a href="http://www.instapaper.com/hello2?url={{ post.url }}">Instapaper</a>
+    </div>
+    
     {{ content }}
 </div>
-
-<!--
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
--->

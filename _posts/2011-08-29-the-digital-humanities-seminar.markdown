@@ -10,13 +10,14 @@ We'll be writing up weekly discussions of our readings, and I will likely be pos
 
 If you're interested in following along, you can find us on Twitter with the hashtag #UNL_DHS. My colleague, [Brian Sarnacki](http://briansarnacki.com), will also be blogging regularly about the course, as will [Professor Thomas](http://railroads.unl.edu/blog/).
 
-## Weekly Writings ##
+### Weekly Writings ###
 
 1.  <a href="http://jasonheppler.org/organizing-knowledge-and-the-future-of-the-humanities.html">Organizing Knowledge</a>
 2.  <a href="http://jasonheppler.org/the-medium-of-digital-humanities.html">The Media of Digital Humanities</a>
 3.  [Electronic Text and the Digital Humanities](http://jasonheppler.org/the-digital-humanities-seminar.html)
-4.  Data
-5.  Spatial Humanities
+4.  <a
+    href="http://jasonheppler.org/information-in-the-digital-age.html">Information and Data in the Digital Age</a>
+5.  <a href="http://jasonheppler.org/spatial-humanities-.html">Spatial Humanities and Visual Narratives</a>
 6.  Aesthetics
 7.  Narrative
 8.  Theory
