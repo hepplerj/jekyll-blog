@@ -4,6 +4,7 @@ layout: post
 title: "The Rubyist Historian: Methods and Classes"
 date: 2010-12-31 07:30:51 -06:00
 wordpress_url: http://www.jasonheppler.org/?p=587
+tags: Programming Ruby Rubyist-Historian
 ---
 In our last section I introduced some Ruby programming basics. Now we're moving in to methods and classes. <!--more-->
 

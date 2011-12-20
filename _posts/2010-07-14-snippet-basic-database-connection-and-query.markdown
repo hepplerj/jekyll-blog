@@ -5,6 +5,7 @@ title: "Snippet: Basic Database Connection and Query"
 excerpt: A snipped of code for a basic connection and display of a MySQL database using PHP.
 date: 2010-07-14 21:53:16 -05:00
 wordpress_url: http://www.jasonheppler.org/?p=180
+tags: Database
 ---
 Basic setup for database connection, querying, and returning results.
 <pre lang="php"><!--?php

@@ -11,9 +11,8 @@ html, body {
 }
 body {
     background: white;
-    font: 11pt palatino, "times new roman", serif;
-    color: #333;
-    line-height: 1.1;
+    font: 300 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;/*11pt palatino, "times new roman", serif;*/
+    color: #444;
 }
 
 /*
@@ -151,6 +150,75 @@ ul.posts {
   font-size: 10pt;
 }
 
+ul#recentPosts {
+  margin-left: -40px;
+}
+
+ul#recentPosts li {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #efefef;
+  display: block;
+}
+
+#recentPosts .postDate {
+  float: right;
+}
+
+#archives li a {
+  margin-right: 5px;
+}
+
+#archives {
+  width: 600px;
+}
+
+#archives #cattags {
+  float: left;
+  width: 280px;
+  margin-left: 30px;
+}
+
+#archives ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+#archives ul li {
+  list-style: none;
+}
+
+#archives #date {
+  float: left;
+  width: 280px;
+}
+
+#tag-cloud ol {
+  margin-left: -40px;
+}
+
+#tag-cloud ol li {
+  display: inline;
+  list-style: none;
+}
+
+#tag-cloud .not-popular {
+  font-size: 0.7em;
+}
+
+#tag-cloud .popular {
+  font-size: 1.0em;
+}
+
+#tag-cloud .very-popular {
+  font-size: 1.3em;
+}
+
+#tag-cloud .ultra-popular {
+  font-size: 1.7em;
+}
+
 header {
   display: block;
   padding-bottom: 3em;
@@ -198,7 +266,7 @@ a:hover.old-posts {
 }
 
 #container {
-    width: 600px;
+    width: 740px;
     margin: 0 auto;
     padding-top: 15px;
     text-align: center;
@@ -447,8 +515,11 @@ blockquote {
 }
 
 #content {
-    overflow: hidden;
-    margin: auto;
+    background-color: white;
+    width: 740px;
+    margin: 0 auto;
+    /*overflow: hidden;
+    margin: auto;*/
 }
 
 section#sidebar {
@@ -501,9 +572,11 @@ p.tagline {
 
 .entry {
     float: left;
-    width: 550px;
+    width: 740px;
+    /*padding: 30px;*/
     margin-top: 8px;
     text-align: left;
+    background-color: white;
 }
 
 .entry h2 {

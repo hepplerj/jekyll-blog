@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="archive">
+    <h2>Archived Posts from {{ page.month | to_month }}, {{ page.year }}</h2>
+    <ol>
+    {% if page.posts_by_month[page.year][page.month] %}
+      {% for post in page.posts_by_month[page.year][page.month] %}
+        <li class="internal">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <div class="meta">
+                <span class="published">{{ post.date | date: "%B %d, %Y" }}</span>
+            </div>
+        </li>
+      {% endfor %}
+    {% endif %}
+    </ol>
+</div>

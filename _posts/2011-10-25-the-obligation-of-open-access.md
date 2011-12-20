@@ -3,7 +3,8 @@ author: Jason Heppler
 layout: post
 title: "The Obligation of Open Access"
 date: Tue Oct 25 09:27:33 -0500 2011
-tags:
+tags: Open-Access
+category: Digital-Humanities
 ---
 
 It's [open access week](http://www.openaccessweek.org/) and I've decided to make a new commitment to OA: I've signed the 

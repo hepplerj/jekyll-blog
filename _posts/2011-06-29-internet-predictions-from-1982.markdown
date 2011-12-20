@@ -2,6 +2,7 @@
 layout: post
 title: "Internet Predictions from 1982"
 date: Wed Jun 29 10:50:44 -0500 2011
+tags: Computers Internet
 ---
 This [New York Times](http://www.nytimes.com/1982/06/14/us/study-says-technology-could-transform-society.html) article from 1982 writes about a National Science Foundation study speculating on the impact of internet technology. Some interesting -- and not too far off -- predictions:
 

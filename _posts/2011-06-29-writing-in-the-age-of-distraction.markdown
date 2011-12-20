@@ -2,6 +2,7 @@
 layout: post
 title: "Writing in the Age of Distraction"
 date: Wed Jun 29 18:16:07 -0500 2011
+tags: Writing
 ---
 Some good writing advice from [Cory Doctorow](http://www.locusmag.com/Features/2009/01/cory-doctorow-writing-in-age-of.html):
 

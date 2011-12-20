@@ -2,6 +2,7 @@
 layout: post
 title: "Self-Publishing is About to Get Real"
 date: Mon Jun 27 12:18:19 -0500 2011
+tags: Publishing Writing
 ---
 [Aaron Mahnke](http://www.aaronmahnke.com/post/6829568465): 
 

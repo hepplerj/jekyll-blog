@@ -4,6 +4,7 @@ layout: post
 title: Alternative Scholarly Publishing
 date: 2011-03-29 22:06:56 -05:00
 wordpress_url: http://www.jasonheppler.org/?p=1403
+tags: Publishing
 ---
 [John Houghton](http://informationr.net/ir/16-1/paper469.html): 
 

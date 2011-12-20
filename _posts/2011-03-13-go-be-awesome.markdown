@@ -4,6 +4,7 @@ layout: post
 title: Go Be Awesome
 date: 2011-03-13 23:05:55 -05:00
 wordpress_url: http://www.jasonheppler.org/?p=1362
+tags: Steve-Jobs Apple
 ---
 <iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/UF8uR6Z6KLc" frameborder="0" allowfullscreen></iframe>
 

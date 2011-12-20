@@ -4,6 +4,7 @@ layout: post
 title: FREQr Version 2
 date: 2011-02-13 09:36:26 -06:00
 wordpress_url: http://www.jasonheppler.org/?p=1185
+tags: Ruby Visualization Text-Analysis Programming
 ---
 Late last year I released a word frequency generator into the wild on Github. I've since updated the program to a more advanced version.
 

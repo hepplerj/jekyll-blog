@@ -4,6 +4,7 @@ layout: post
 title: Some Good Words to Live By
 date: 2010-10-10 08:56:58 -05:00
 wordpress_url: http://www.jasonheppler.org/?p=355
+tags: Hacking
 ---
 The Hacker Ethic:
 <blockquote>1. Access to computers—and anything which might teach you something about the way the world works—should be unlimited and total.

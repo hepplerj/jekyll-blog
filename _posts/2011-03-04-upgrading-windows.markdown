@@ -4,6 +4,7 @@ layout: post
 title: Upgrading Windows
 date: 2011-03-04 00:19:09 -06:00
 wordpress_url: http://www.jasonheppler.org/?p=1333
+tags: Windows Computers
 ---
 Some guy upgrades his computer through every version of Windows starting with a clean install of MS-DOS 5.0 all the way through Windows 7, via <a href="http://kottke.org/11/03/upgrading-windows-from-10-to-70">Jason Kottke</a>:
 

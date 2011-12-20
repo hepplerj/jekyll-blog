@@ -4,6 +4,7 @@ layout: post
 title: Digital History and Continuous Deployment
 date: 2011-03-02 07:45:53 -06:00
 wordpress_url: http://www.jasonheppler.org/?p=1190
+tags: Digital-Humanities Continuous-Deployment
 ---
 The other night on <a href="http://www.reddit.com/r/programming/">Proggit</a> I came across a <a href="http://fragile.org.uk/2011/02/in-praise-of-continuous-deployment/">blog post</a> praising continuous deployment. Continuous deployment is the process of code written for applications are immediately deployed which <a href="http://radar.oreilly.com/2009/03/continuous-deployment-5-eas.html">lowers cycle time and opens up individual initiative</a>.  As I was reading the post and doing a bit of my own Googling I began to wonder if continuous deployment worked as a metaphor for digital scholarship. These are my quick thoughts.
 

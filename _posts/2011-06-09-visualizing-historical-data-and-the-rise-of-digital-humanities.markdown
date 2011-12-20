@@ -2,6 +2,7 @@
 layout: post
 title: "Visualizing Historical Data and the Rise of Digital Humanities"
 date: Sat Jun 09 10:46:51 -0500 2011
+tags: Visualizations Digital-Humanities
 ---
 
 [David Zax](http://www.fastcompany.com/1758538/the-rise-of-digital-humanities): 

@@ -2,6 +2,7 @@
 layout: post
 title: "How Books Are Made, 1947 Style"
 date: Wed Jun 29 10:56:04 -0500 2011
+tags: Books
 ---
 A video from 1947 demonstrating how a book is made:
 

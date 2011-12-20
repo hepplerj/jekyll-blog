@@ -2,6 +2,7 @@
 layout: post
 title: "Why Macs Cost More Than PCs"
 date: Sun Jun 26 20:17:15 -0500 2011
+tags: Apple Computers
 ---
 
 [Matt Richman](http://mattrichman.tumblr.com/post/6844151919/a-consequence-of-losing-the-pc-wars) crunches the numbers:
