@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title: Archives
 ---
 <h2>Archives</h2>
@@ -17,79 +17,15 @@ title: Archives
   {% endfor %}
 </ul>
 
-<div id="date">
-<h3>Months</h3>
-<ul>
-  <li><a href="{{base.site_url}}2011/12/">December 2011</a></li>
-  <li><a href="{{base.site_url}}2011/11/">November 2011</a></li>
-  <li><a href="{{base.site_url}}2011/10/">October 2011</a></li>
-  <li><a href="{{base.site_url}}2011/09/">September 2011</a></li>
-  <li><a href="{{base.site_url}}2011/08/">August 2011</a></li>
-  <li><a href="{{base.site_url}}2011/07/">July 2011</a></li>
-  <li><a href="{{base.site_url}}2011/06/">June 2011</a></li>
-  <li><a href="{{base.site_url}}2011/05/">May 2011</a></li>
-  <li><a href="{{base.site_url}}2011/04/">April 2011</a></li>
-  <li><a href="{{base.site_url}}2011/03/">March 2011</a></li>
-  <li><a href="{{base.site_url}}2011/02/">February 2011</a></li>
-  <li><a href="{{base.site_url}}2011/01/">January 2011</a></li>
-  <li><a href="{{base.site_url}}2010/12/">December 2010</a></li>
-  <li><a href="{{base.site_url}}2010/11/">November 2010</a></li>
-  <li><a href="{{base.site_url}}2010/10/">October 2010</a></li>
-  <li><a href="{{base.site_url}}2010/08/">August 2010</a></li>
-  <li><a href="{{base.site_url}}2010/07/">July 2010</a></li>
-  <li><a href="{{base.site_url}}2009/10/">October 2009</a></li>
-  <li><a href="{{base.site_url}}2009/09/">September 2009</a></li>
-  <li><a href="{{base.site_url}}2009/06/">June 2009</a></li>
-  <li><a href="{{base.site_url}}2009/04/">April 2009</a></li>
-  <li><a href="{{base.site_url}}2008/12/">December 2008</a></li>
-  <li><a href="{{base.site_url}}2008/11/">November 2008</a></li>
-  <li><a href="{{base.site_url}}2008/10/">October 2008</a></li>
-  <li><a href="{{base.site_url}}2008/09/">September 2008</a></li>
-  <li><a href="{{base.site_url}}2008/05/">May 2008</a></li>
-  <li><a href="{{base.site_url}}2008/04/">April 2008</a></li>
-
-<ul>
-{% for monthly_archive in site.monthly_archives reversed %}
-  <li>
-    <a href="{{ site.baseurl }}/{{ monthly_archive.url }}">{{ monthly_archive.name }}</a> ({{ monthly_archive.posts | size }} posts)
-  </li>
-{% endfor %}
-</ul>
-
-</ul>
-</div>
-
-<div id="cattags">
-<h3>Tags</h3>
-<div id="tag-cloud">
-  <ol>
-  {% for tag in site.tags %}
-  {% assign taglist = tag[1] %}
-  {% case taglist.size %}
-      {% when 1 %}
-      {% assign class="not-popular" %}
-      {% when 2 %}
-      {% assign class="popular" %}
-      {% when 3..9 %}
-      {% assign class="very-popular" %}
-      {% else %}
-      {% assign class="ultra-popular" %}
-  {% endcase %}
-      <li class="{{ class }}"><a href="tags/{{ tag[0] | cgi_escape }}/" title="View entries tagged '{{ tag[0] }}'">{{ tag[0] }}</a></li>
-  {% endfor %}
-  </ol>
-  </div>
-</div>
-
-</div>
-
 <!--
 
 <h3>Yearly</h3>
 
 
 <p>=========</p>
+-->
 
+<h3>Full Archive</h3>
 <ul>
   {% for post in site.posts %}
 
@@ -107,4 +43,4 @@ title: Archives
   {% endfor %}
 </ul>
 
--->
+</div>

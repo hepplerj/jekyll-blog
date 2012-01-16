@@ -9,10 +9,68 @@
 html, body {
   height: 100%;
 }
+
 body {
-    background: white;
-    font: 300 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;/*11pt palatino, "times new roman", serif;*/
-    color: #444;
+  color: #333;
+  font-family: franklin-gothic-urw,helvetica,arial,sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.45em;
+}
+
+body {
+  font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  font-style: normal;
+  /*text-transform: uppercase; */
+  line-height: .8em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 430%;
+  padding: .25em 0 .25em 0;
+  margin-left: -5px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
+h3 {
+  padding: 0 0 1.5em 0;
+  margin: 0 0 1.25em 0;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none;
+  border-bottom: solid #ccc 1px;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+a {
+    color: #369;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #390;
+    text-decoration: none;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
 }
 
 /*
@@ -25,6 +83,7 @@ body {
 }
 */
 
+/*
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-style: normal;
@@ -45,20 +104,14 @@ h2 {
     padding: 0;
     font-weight: normal;
 }
+*/
 
+/*
 p {
   margin: 1em 0;
 }
+*/
 
-a {
-    color: #C00; /*#67d8f1;*/ /*#B5190E;*/
-    text-decoration: none;
-}
-
-a:hover {
-    color: #222;
-    text-decoration: underline;
-}
 
 table {
   font-size: inherit;
@@ -95,6 +148,56 @@ ul.posts {
 /* Site
 /*
 /*****************************************************************************/
+
+.header_container {
+  margin: 0 auto;
+} 
+
+.header_container {
+  display: block;
+  text-transform: uppercase;
+}
+
+.header_container h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #555;
+  font-size: 3em;
+  font-family: 'Francois One', sans-serif;
+}
+
+.header_container a {
+  text-decoration: none;
+  color: #222;
+}
+
+.header_container span {
+  color: #369;
+}
+
+#siteDesc {
+  font-size: 1em;
+  font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
+  margin: 20px auto 25px;
+  width: 435px;
+  padding: 11px 0 13px;
+  color: #555;
+  font-style: italic;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-transform: none;
+  text-align: center;
+}
+
+#siteDesc a {
+	color: #369;
+}
+
+#siteDesc a:hover {
+	color: #390;
+}
+
 
 #mainNav {
   margin-top: 10px;
@@ -133,21 +236,18 @@ ul.posts {
   margin: 20px auto 25px;
   width: 400px;
   padding: 11px 0 13px;
-  color: #999;
+  color: #555;
   font-style: italic;
-  border-top: 1px solid #EAEAEA;
-  border-bottom: 1px solid #EAEAEA;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 
 #postmeta {
-  text-align: center;
+  text-align: left;
 }
 
 #reader {
-  text-align: center;
-  margin: 0 auto;
-  width: 400px;
-  font-size: 10pt;
+  text-align: left;
 }
 
 ul#recentPosts {
@@ -242,6 +342,10 @@ header #nav ul, #nav li {
 
 #header h1 {
   font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 3em;
+  font-family: 'Francois One', sans-serif;
 }
 
 #header a {
@@ -250,7 +354,7 @@ header #nav ul, #nav li {
 }
 
 #header span {
-  color: #C00 /*#B5190E*/;
+  color: #369 /*#B5190E*/;
 }
 
 a.old-posts {
@@ -266,15 +370,16 @@ a:hover.old-posts {
 }
 
 #container {
-    width: 740px;
+    width: 960px;
     margin: 0 auto;
     padding-top: 15px;
-    text-align: center;
     position: relative;
 }
 
 time {
     color: #888;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .menubar {
@@ -432,23 +537,15 @@ time {
   padding: 0;
   white-space: nowrap;
 }
-/*
+
 #sidebar {
-  color: #666;
   float: right;
-  font-size: 70%;
   line-height: 140%;
   margin: 2em 0px 0px;
   padding: 0px;
-  width: 120px;
-}
-
-#sidebar .nav {
-  font-size: 120%;
-  font-style: normal;
-  font-weight: 500;
-  margin: 0px 0px 2.5em;
+  width: 170px;
   text-transform: uppercase;
+  font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
 }
 
 #sidebar ul {
@@ -460,7 +557,7 @@ time {
 #sidebar li {
   margin: 0px 0px 0.5em;
 }
-*/
+
 #primary {
   margin: 0px auto;
   width: 770px;
@@ -506,8 +603,7 @@ article {
 }
 
 blockquote {
-  border-left: 1px solid #777;
-  border-right: 0px solid #777;
+    font-style: italic;
   font-size: 1em;
   margin: 0px 3em 0px 0px;
   padding: 0px 0.75em 0px 1em;
@@ -515,13 +611,19 @@ blockquote {
 }
 
 #content {
-    background-color: white;
-    width: 740px;
+    width: 680px;
     margin: 0 auto;
     /*overflow: hidden;
     margin: auto;*/
 }
 
+#postdivision {
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*
 section#sidebar {
     float: right;
     width: 250px;
@@ -561,7 +663,7 @@ section#sidebar ul li a {
 section#sidebar ul li a:hover {
     color: #ccc;
 }
-
+*/
 p.tagline {
     padding: 0;
     margin: 6px 0 60px 0;
@@ -572,16 +674,19 @@ p.tagline {
 
 .entry {
     float: left;
-    width: 740px;
-    /*padding: 30px;*/
+    width: 620px;
     margin-top: 8px;
     text-align: left;
-    background-color: white;
+}
+
+.entry p {
+    font: 300 1.2em/1.6em "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif
 }
 
 .entry h2 {
+    font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif
     margin-top: 2em;
-    margin-bottom: -0.6em;
+   /* text-transform: uppercase; */
 }
 
 .entry h2 a {
@@ -602,6 +707,13 @@ p.tagline {
 
 .entry h2.short {
 
+}
+
+.entry h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  border: none;
 }
 
       .wrap {

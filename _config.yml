@@ -8,6 +8,7 @@ pygments:       true
 markdown:       rdiscount
 permalink:      /:title.html
 
+name: History in the Digital
 base_url:       http://jasonheppler.org
 #base_url:      /
 description:    "A blog covering digital history, humanities computing, and the cultural history of computers"
