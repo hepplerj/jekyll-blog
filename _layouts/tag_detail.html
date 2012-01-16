@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="archive">
+    <h2>{{ site.tags[page.tag].size }} articles tagged with &ldquo;<em>{{ page.tag }}</em>&rdquo;</h2>
+
+    <ol>
+    {% for p in site.tags[page.tag] %}
+        <li class="internal">
+            <a href="{{ p.url }}">
+                {{ p.title }}
+            </a>
+            <div class="meta">
+                <span class="published">{{ p.date | date: "%B %d, %Y" }}</span>
+            </div>
+            {% if p.Teaser %}{{ p.Teaser | markdownify }}{% endif %}
+        </li>
+    {% endfor %}
+    </ol>
+</div>

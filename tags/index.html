@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="tag-cloud">
+    <h1>Popular tags</h1>
+    <ol>
+{% for tag in site.tags %}
+    {% assign taglist = tag[1] %}
+    {% case taglist.size %}
+        {% when 1 %}
+        {% assign class="not-popular" %}
+        {% when 2 %}
+        {% assign class="popular" %}
+        {% when 3..9 %}
+        {% assign class="very-popular" %}
+        {% else %}
+        {% assign class="ultra-popular" %}
+    {% endcase %}
+        <li class="{{ class }}"><a href="{{ site.tag_root }}/{{ tag[0] | cgi_escape }}/" title="View entries tagged '{{ tag[0] }}'">{{ tag[0] }}</a></li>
+{% endfor %}
+    </ol>
+</div>
