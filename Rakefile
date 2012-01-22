@@ -1,5 +1,4 @@
-# Adopted from Scott Kyle's Rakefile
-# http://github.com/appden/appden.github.com/blob/master/Rakefile
+# Jason Heppler
 
 desc 'deploy to jasonheppler.org via rsync'
 task :deploy do
@@ -10,41 +9,74 @@ task :deploy do
   puts 'Done!'
 end
 
-desc 'create new post or bit. args: type (post, bit), title, future (# of days)'
-# rake new future=0 title="New post title goes here" slug="slug-override-title"
-task :new do
-  require 'rubygems'
-  require 'chronic'
-  
-  title = ENV["title"] || "New Title"
-  future = ENV["future"] || 0
-  slug = (ENV["slug"] ? ENV["slug"].gsub(' ','-').downcase : nil) || title.gsub(' ','-').downcase
+desc 'running Jekyll with --server --auto options'
+task :dev do
+  system('jekyll --server --auto')
+end
 
-  if future.to_i < 3
-    TARGET_DIR = "_posts"
-  else
-    TARGET_DIR = "_drafts"
-  end
-
-  if future.to_i.zero?
-    filename = "#{Time.new.strftime('%Y-%m-%d')}-#{slug}.markdown"
-  else
-    stamp = Chronic.parse("in #{future} days").strftime('%Y-%m-%d')
-    filename = "#{stamp}-#{slug}.markdown"
-  end
-  path = File.join(TARGET_DIR, filename)
-  post = <<-HTML
---- 
+desc "give title as argument and create new post title"
+# usage rake write["Post Title Goes Here",category]
+task :write, [:title, :category] do |t, args|
+  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '_').downcase}.markdown"
+  path = File.join("_posts", filename)
+  if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
+  File.open(path, 'w') do |file|
+    file.write <<-EOS
+---
 layout: post
-title: "TITLE"
-date: DATE
+category: #{args.category}
+title: #{args.title}
+date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+---
+EOS
+    end
+    puts "Now opening #{path} in TextMate..."
+    system "mate #{path}"
+end
+
+namespace :tags do
+  task :generate do
+    puts 'Generating tags...'
+    require 'rubygems'
+    require 'jekyll'
+    include Jekyll::Filters
+
+    options = Jekyll.configuration({})
+    site = Jekyll::Site.new(options)
+    site.read_posts('')
+
+    html =<<-HTML
+---
+layout: default
+title: Tags
 ---
 
-HTML
-  post.gsub!('TITLE', title).gsub!('DATE', Time.new.to_s)
-  File.open(path, 'w') do |file|
-    file.puts post
+<h2>Tags</h2>
+
+    HTML
+
+    site.categories.sort.each do |category, posts|
+      html << <<-HTML
+      <h3 id="#{category}">#{category}</h3>
+      HTML
+
+      html << '<ul class="posts">'
+      posts.each do |post|
+        post_data = post.to_liquid
+        html << <<-HTML
+          <li>
+            <div>#{date_to_string post.date}</div>
+            <a href="#{post.url}">#{post_data['title']}</a>
+          </li>
+        HTML
+      end
+      html << '</ul>'
+    end
+
+    File.open('tags.html', 'w+') do |file|
+      file.puts html
+    end
+
+    puts 'Done.'
   end
-  puts "new #{type} generated in #{path}"
-  system "open -a textmate #{path}"
 end

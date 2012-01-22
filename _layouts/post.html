@@ -1,11 +1,15 @@
 ---
-layout: default
+layout: blog
 ---
 <div id="post-{{ id }}" class="post">
   <div id="postmeta">
     <h2>{{ page.title }}</h2>
-    <p><em>by Jason Heppler, {{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} 
-    {{page.date | date: "%Y"}}</em></p>
+    <p>
+		<time>
+			<em>by Jason Heppler, {{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} 
+    {{page.date | date: "%Y"}}</em>
+		</time>
+	</p>
   </div>
   
   <div id="reader">

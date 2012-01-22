@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
 }
-
+/*
 body {
   color: #333;
   font-family: franklin-gothic-urw,helvetica,arial,sans-serif;
@@ -20,6 +20,15 @@ body {
 
 body {
   font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+*/
+
+body {
+	color: #333;
+	background: white;
+	margin: 0;
+	font-size: 100%;
+	font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,7 +72,7 @@ a {
 }
 
 a:hover {
-    color: #390;
+    color: #900;
     text-decoration: none;
 }
 
@@ -177,7 +186,7 @@ ul.posts {
 }
 
 #siteDesc {
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
   margin: 20px auto 25px;
   width: 435px;
@@ -195,9 +204,8 @@ ul.posts {
 }
 
 #siteDesc a:hover {
-	color: #390;
+	color: #900;
 }
-
 
 #mainNav {
   margin-top: 10px;
@@ -230,7 +238,7 @@ ul.posts {
   text-decoration: underline;
   color: #222;
 }
-
+/*
 #siteDesc {
   font-size: 0.9em;
   margin: 20px auto 25px;
@@ -241,6 +249,25 @@ ul.posts {
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
 }
+*/
+
+sup {
+	vertical-align: super;
+	font-size: 0.8em;
+	line-height: 0;
+}
+
+ol.footnotes, #list-content ol.footnotes {
+	display: block;
+	border-top: 1px dashed #eee;
+	font-size: 0.8em;
+	color: #4A4A4A;
+	line-height: 1.4em;
+	padding-top: 5px;
+	margin-left: 0px;
+	padding-left: 20px;
+	border-bottom: none;
+}
 
 #postmeta {
   text-align: left;
@@ -248,6 +275,7 @@ ul.posts {
 
 #reader {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 ul#recentPosts {
@@ -555,7 +583,7 @@ time {
 }
 
 #sidebar li {
-  margin: 0px 0px 0.5em;
+  margin: 0px 0px 0.3em;
 }
 
 #primary {
@@ -603,11 +631,12 @@ article {
 }
 
 blockquote {
-    font-style: italic;
-  font-size: 1em;
-  margin: 0px 3em 0px 0px;
-  padding: 0px 0.75em 0px 1em;
-
+	font-size: 90%;
+	line-height: 140%;
+	border-left: 1px solid black;
+	margin-left: 1em;
+	padding-left: 1em;
+	color: #666;
 }
 
 #content {
@@ -679,12 +708,8 @@ p.tagline {
     text-align: left;
 }
 
-.entry p {
-    font: 300 1.2em/1.6em "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif
-}
-
 .entry h2 {
-    font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif
+    font-family: "Signika", "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
     margin-top: 2em;
    /* text-transform: uppercase; */
 }
@@ -736,7 +761,7 @@ h2.archive_header {
 }
 
 li.archive_list {
-  list-style: none;
+  list-style: disc;
 }
 
 /*****************************************************************************/
