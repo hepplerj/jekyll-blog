@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "What My lolcat Ate For Breakfast"
 date: Wed Nov 09 21:39:08 -0600 2011

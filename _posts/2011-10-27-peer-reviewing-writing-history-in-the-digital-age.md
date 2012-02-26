@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "Peer Reviewing Writing History in the Digital Age"
 date: Thu Oct 27 09:51:58 -0500 2011

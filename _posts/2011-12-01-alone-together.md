@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "Alone Together"
 date: Wed Dec 01 10:47:00 -0600 2011

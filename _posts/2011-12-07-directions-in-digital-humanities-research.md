@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "Directions in Digital Humanities Research"
 date: Wed Dec 07 20:56:37 -0600 2011

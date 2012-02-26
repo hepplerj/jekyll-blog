@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Research
 layout: post
 title: "Legacy Research"
 date: Sat Dec 17 15:43:45 -0700 2011

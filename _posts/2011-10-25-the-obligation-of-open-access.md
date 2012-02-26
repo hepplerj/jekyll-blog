@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Open Access
 layout: post
 title: "The Obligation of Open Access"
 date: Tue Oct 25 09:27:33 -0500 2011

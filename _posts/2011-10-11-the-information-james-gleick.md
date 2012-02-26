@@ -1,5 +1,6 @@
 ---
 layout: post
+category: Review
 title: "The Information: A History, a Theory, a Flood by James Gleick"
 date: Tue Oct 11 14:29:56 -0500 2011
 tags: Review

@@ -1,5 +1,6 @@
 ---
 layout: post
+category: Digital Humanities
 title: "SpecLab and Digital Aesthetics"
 date: Thu Oct 06 10:53:20 -0500 2011
 tags: UNL-DHS Aesthetics

@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "A Call to Redefine Historical Scholarship in the Digital Age"
 date: Fri Jan 13 13:31:08 -0600 2012

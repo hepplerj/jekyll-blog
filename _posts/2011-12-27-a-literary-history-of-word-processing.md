@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "A Literary History of Word Processing"
 date: Tue Dec 27 15:52:45 -0600 2011

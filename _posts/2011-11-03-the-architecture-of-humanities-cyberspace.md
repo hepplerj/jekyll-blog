@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "The Architecture of Humanities Cyberspace"
 date: Thu Nov 03 10:22:11 -0500 2011

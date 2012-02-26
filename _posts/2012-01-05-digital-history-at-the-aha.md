@@ -1,5 +1,6 @@
 ---
 author: Jason Heppler
+category: Digital Humanities
 layout: post
 title: "Digital History at the AHA"
 date: Thu Jan 05 10:12:16 -0600 2012

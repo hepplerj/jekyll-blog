@@ -11,7 +11,7 @@ end
 
 desc 'running Jekyll with --server --auto options'
 task :dev do
-  system('jekyll --server --auto')
+  system('jekyll --server')
 end
 
 desc "give title as argument and create new post title"
