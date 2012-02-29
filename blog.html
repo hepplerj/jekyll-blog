@@ -7,7 +7,7 @@ change_frequency: daily
 priority: 1.0
 ---
 
-  {% for post in site.posts offset: 0 limit: 1 %}
+  {% for post in site.posts offset: 0 limit: 8 %}
   <div id="postmeta">
   <h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a></h2>
   <p><time>{{ post.date | date: "%e" | ordinalize }} {{post.date | date: "%B"}} {{post.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">Permalink</a></time></p>
