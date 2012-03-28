@@ -1,4 +1,12 @@
 # Jason Heppler
+# Modified from Jeff McFadden:
+# http://jeffmcfadden.com/blog/2011/04/13/rsync-your-jekyll/
+
+desc 'default: list available rake tasks'
+task :default do
+	puts 'Try one of these specific tasks:'
+	sh 'rake --tasks --silent'
+end
 
 desc 'deploy to jasonheppler.org via rsync'
 task :deploy do
@@ -11,11 +19,14 @@ end
 
 desc 'running Jekyll with --server --auto options'
 task :dev do
-  system('jekyll --server')
+  puts 'Previewing the site with a local server.'
+  puts 'Use CTRL+C to interrupt.'
+  system('jekyll --auto --server --base-url / --url /')
 end
 
 desc "give title as argument and create new post title"
 # usage rake write["Post Title Goes Here",category]
+# category is optional
 task :write, [:title, :category] do |t, args|
   filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '_').downcase}.markdown"
   path = File.join("_posts", filename)
@@ -32,51 +43,4 @@ EOS
     end
     puts "Now opening #{path} in TextMate..."
     system "mate #{path}"
-end
-
-namespace :tags do
-  task :generate do
-    puts 'Generating tags...'
-    require 'rubygems'
-    require 'jekyll'
-    include Jekyll::Filters
-
-    options = Jekyll.configuration({})
-    site = Jekyll::Site.new(options)
-    site.read_posts('')
-
-    html =<<-HTML
----
-layout: default
-title: Tags
----
-
-<h2>Tags</h2>
-
-    HTML
-
-    site.categories.sort.each do |category, posts|
-      html << <<-HTML
-      <h3 id="#{category}">#{category}</h3>
-      HTML
-
-      html << '<ul class="posts">'
-      posts.each do |post|
-        post_data = post.to_liquid
-        html << <<-HTML
-          <li>
-            <div>#{date_to_string post.date}</div>
-            <a href="#{post.url}">#{post_data['title']}</a>
-          </li>
-        HTML
-      end
-      html << '</ul>'
-    end
-
-    File.open('tags.html', 'w+') do |file|
-      file.puts html
-    end
-
-    puts 'Done.'
-  end
 end
