@@ -1,6 +1,5 @@
 ---
 layout: post
-category: Lifestyle
 title: The French Press Method
 date: 2012-02-15 23:01:26
 ---

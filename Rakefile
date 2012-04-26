@@ -2,6 +2,13 @@
 # Modified from Jeff McFadden:
 # http://jeffmcfadden.com/blog/2011/04/13/rsync-your-jekyll/
 
+## -- Config -- ##
+source_dir  = "_site"
+draft_dir   = "_drafts"
+posts_dir   = "_posts"
+server_port = "4000"
+
+## -- Working with Jekyll -- ##
 desc 'default: list available rake tasks'
 task :default do
 	puts 'Try one of these specific tasks:'
@@ -17,25 +24,29 @@ task :deploy do
   puts 'Done!'
 end
 
-desc 'running Jekyll with --server --auto options'
-task :dev do
-  puts 'Previewing the site with a local server.'
-  puts 'Use CTRL+C to interrupt.'
-  system('jekyll --auto --server --base-url / --url /')
+desc "watch the site and regenerate when it changes"
+task :watch do
+  puts "Starting to watch source with Jekyll."
+  system "jekyll --auto"
+end
+
+desc "preview site in browser with localhost:4000"
+task :preview do
+  puts "Starting site preview in http://localhost:4000."
+  system "jekyll --server"
 end
 
 desc "give title as argument and create new post title"
-# usage rake write["Post Title Goes Here",category]
+# usage rake write["Post Title Goes Here"]
 # category is optional
 task :write, [:title, :category] do |t, args|
-  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '_').downcase}.markdown"
+  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '-').downcase}.md"
   path = File.join("_posts", filename)
   if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
   File.open(path, 'w') do |file|
     file.write <<-EOS
 ---
 layout: post
-category: #{args.category}
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 ---
