@@ -40,13 +40,14 @@ h2 {
 }
 
 p {
-  margin: 0;
-  padding: 0 0 1em 0;
 }
 
 a {
-    color: #369;
+    color: #07C;
     text-decoration: none;
+	-moz-transition: color .28s ease-in; /* firefox */
+	-webkit-transition: color .28s ease-in; /* safari and chrome */
+	-o-transition: color .28s ease-in; /* opera */
 }
 
 a:hover {
@@ -67,6 +68,11 @@ table {
 
 ul {
   margin-bottom: 24px;
+}
+
+::selection {
+	background-color: #ff4329;
+	color: white;
 }
 
 /*****************************************************************************/
@@ -308,6 +314,16 @@ header #nav ul, #nav li {
 
 #header span {
   color: #369; /*#B5190E*/
+}
+
+.perma {
+	margin-left: 1.5em;
+	font-size: .8em;
+	color: #999;
+}
+
+.perma a:hover {
+	color: #ff4329;
 }
 
 a.old-posts {
@@ -639,6 +655,7 @@ p.tagline {
 
 .entry h2 {
     margin-top: 2em;
+	margin-bottom: 1em;
    /* text-transform: uppercase; */
 }
 
@@ -698,6 +715,8 @@ li.archive_list {
 }
 
 .blog_header {
+	font-family: 'Economica', sans-serif;
+	font-weight: 700; 
 	border-top: 3px solid #08C;
 	background-color: #ebebeb;
 	height: 120px;
@@ -726,6 +745,54 @@ li.archive_list {
 
 .blog_header a.name {
 	font-size: 26px;
+}
+
+#blog_header {
+	margin: 0 auto;
+	width: 100%;
+	padding: 2px 15px 2px 15px;
+	clear: both;
+	background-color: #333;
+	color: #fafafa;
+	font-weight: 700;
+	font-family: 'Economica', sans-serif;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	border-top: 3px solid #08C;
+}
+
+#blog_header ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	line-height: 30px;
+	text-align: center;
+}
+
+#blog_header li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#blog_header a {
+	color: #f2f2f2;
+}
+
+#blog_header a:hover {
+	color: #ff4329;
+}
+
+#blog_header li:first-child {
+	border-right: 1px solid #e0e0e0;
+}
+
+#blog_header li:last-child {
+	border-left: 1px solid #e0e0e0;
 }
 
 /*****************************************************************************/
