@@ -24,6 +24,12 @@ task :deploy do
   puts 'Done!'
 end
 
+desc "nuke and rebuild"
+task :nuke do
+    sh 'rm -rf _site'
+    jekyll
+end
+
 desc "watch the site and regenerate when it changes"
 task :watch do
   puts "Starting to watch source with Jekyll."
@@ -52,6 +58,6 @@ date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 ---
 EOS
     end
-    puts "Now opening #{path} in TextMate..."
-    system "mate #{path}"
+    puts "Now opening #{path} in MacVim..."
+    system "mvim #{path}"
 end
