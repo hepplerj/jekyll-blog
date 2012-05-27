@@ -42,7 +42,7 @@ task :preview do
   system "jekyll --server"
 end
 
-desc "give title as argument and create new post title"
+desc "give title as argument and create new post"
 # usage rake write["Post Title Goes Here"]
 # category is optional
 task :write, [:title, :category] do |t, args|
@@ -58,6 +58,26 @@ date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 ---
 EOS
     end
-    puts "Now opening #{path} in MacVim..."
-    system "mvim #{path}"
+    puts "Now opening #{path} in TextMate..."
+    system "mate #{path}"
+end
+
+desc "give title as argument for draft post"
+# usage rake draft["Post Title Goes Here"]
+# category is optional
+task :draft, [:title, :category] do |t, args|
+  filename = "#{Time.now.strftime('%Y-%m-d')}-#{args.title.gsub(/\s/, '-').downcase}.md"
+  path = File.join("_drafts", filename)
+  if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
+  File.open(path, 'w') do |file|
+    file.write <<-EOS
+---
+layout: post
+title: #{args.title}
+date: #{Time.now.strftime('%Y-%m-d %k:%M:%S')}
+---
+EOS
+    end
+    puts "Now opening #{path} in TextMate..."
+    system "mate #{path}"
 end
