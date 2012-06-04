@@ -2,7 +2,10 @@
 layout: post
 title: "Using Notational Velocity"
 date: Fri Jul 22 22:53:44 -0600 2011
-tags: Notational-Velocity Workflow
+tags:
+- workflow
+- productivity
+- nvalt
 ---
 
 One of my favorite Mac programs is [Notational Velocity](http://notational.net/). I do a lot of writing with it -- everything from meeting notes, to jotting down ideas, to creating reference files and running lists, even occasionally to write up longer-form content like blog posts or research (though I tend to use TextMate for most long-form writing). 

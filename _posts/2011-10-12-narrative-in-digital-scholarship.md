@@ -1,10 +1,12 @@
 ---
 author: Jason Heppler
-category: Digital Humanities
 layout: post
 title: "Models for Narrative in Digital Humanities"
 date: Thurs Oct 13 17:03:39 -0500 2011
-tags: UNL-DHS Narrative
+tags: 
+- unl-dhs
+- scholarship
+- writing
 ---
 
 *[This is a reading reflection for HIST946: Digital Humanities with Professor William

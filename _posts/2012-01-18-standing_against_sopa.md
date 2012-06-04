@@ -1,8 +1,10 @@
 ---
 layout: post
-category: Technology
 title: Standing Against SOPA
 date: 2012-01-18  21:05:00
+tags:
+- internet
+- sopa
 ---
 If you visited [in the last twenty-four hours](http://jasonheppler.org/sopa.html), you would've seen that the site was, like many others, silenced to protest SOPA.
 

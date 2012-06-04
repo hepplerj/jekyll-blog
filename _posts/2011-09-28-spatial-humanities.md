@@ -2,8 +2,9 @@
 layout: post
 title: "Spatial Humanities and Visual Narratives"
 date: Wed Sep 28 10:10:25 -0500 2011
-tags: UNL-DHS Spatial-Humanities
-category: Digital-Humanities
+tags:
+- unl-dhs
+- spatial-humanities
 ---
 
 *[This is a reading reflection written for HIST946: Digital Humanities with

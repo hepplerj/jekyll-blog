@@ -1,10 +1,12 @@
 ---
 author: Jason Heppler
-category: Digital Humanities
 layout: post
 title: "The Architecture of Humanities Cyberspace"
 date: Thu Nov 03 10:22:11 -0500 2011
-tags: UNL-DHS Law Architecture Digital-Humanities
+tags: 
+- unl-dhs
+- law
+- digitalhistory
 ---
 
 *[This is a reading reflection for HIST946: Digital Humanities for Prof. William G. Thomas during the Fall 2011 semester. This week's reading was Lawrence Lessig, *[Code, and Other Laws of Cyberspace](http://codev2.cc/)*. You can find related posts [here](http://jasonheppler.org/the-digital-humanities-seminar.html).]*

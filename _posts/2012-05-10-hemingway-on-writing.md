@@ -2,6 +2,8 @@
 layout: post
 title: Hemingway on Writing
 date: 2012-05-10  9:25:45
+tags:
+- writing
 ---
 
 Ernest Hemingway in [a 1958 interview](http://www.theparisreview.org/interviews/4825/the-art-of-fiction-no-21-ernest-hemingway)

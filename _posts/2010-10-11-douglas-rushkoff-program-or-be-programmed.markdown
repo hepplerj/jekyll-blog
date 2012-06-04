@@ -4,7 +4,8 @@ layout: post
 title: Douglas Rushkoff, Program or Be Programmed
 date: 2010-10-11 19:59:03 -05:00
 wordpress_url: http://www.jasonheppler.org/?p=371
-tags: Programming
+tags:
+- programming
 ---
 I've just puchased Douglas Rushkoff's latest book, <em><a href="ttp://www.amazon.com/gp/product/1935928155?ie=UTF8&tag=jasohepp-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1935928155">Program or Be Programmed: Ten Commandments for a Digital Age</a></em>.  I'll be reviewing the book here once I finish it.  In the mean time, here's the video short:
 

@@ -1,11 +1,10 @@
 --- 
-wordpress_id: 265
 layout: post
 title: Preparing for Your Semester Teaching Assistantship
-excerpt: As the beginning of the semester draws near, professors aren't the only ones preparing for the coming months.  Teaching assistants should also be preparing.  Here are some tips, ideas, and advice for surviving your semester assistantship.
 date: 2010-08-10 20:18:36 -05:00
-wordpress_url: http://www.jasonheppler.org/?p=265
-tags: Graduate-School Teaching-Assistantship
+tags: 
+- productivity
+- graduate-school
 ---
 The posts over at Prof Hacker on <a href="http://chronicle.com/blogPost/Creating-a-Checklist/26081">creating a checklist for the semester</a> and <a href="http://chronicle.com/blogPost/Organizing-Your-Teaching/25857/">organizing teaching material</a> got me thinking about my process of preparing for the semester, organizing and archiving my material, and keeping my sanity.  So, consider this post a ProfHacker / Lifehacker-esque contribution.
 

@@ -2,8 +2,9 @@
 layout: post
 title: "Digital Humanities at the 2012 American Historical Association"
 date: Mon Sep 26 20:49:20 -0500 2011
-tags: UNL-DHS AHA
-category: Digital-Humanities
+tags:
+- unl-dhs
+- conference
 ---
 
 Today's announcement from the American Historical Association regarding their

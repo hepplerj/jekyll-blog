@@ -5,7 +5,7 @@ destination:    ./_site
 includes:       ./_includes
 
 pygments:       true
-markdown:       rdiscount
+markdown:       kramdown
 #permalink:      /:title.html
 
 name: History in the Digital

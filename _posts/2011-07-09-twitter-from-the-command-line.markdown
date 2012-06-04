@@ -2,7 +2,9 @@
 layout: post
 title: "Twitter from the Command Line"
 date: Sat Jul 09 22:22:14 -0500 2011
-tags: CLI Twitter
+tags:
+- twitter
+- terminal
 ---
 
 I'm trying to incorporate Twitter into my workflow for [Jekyll](http://www.jasonheppler.org/migrating-to-jekyll.html) by allowing any new posts to the site to subsequently update Twitter. The script I've hacked together so far is very basic, and doesn't yet do the job, but I thought I'd share what I have thus far. 

@@ -2,6 +2,8 @@
 layout: post
 title: Full Trash
 date: 2012-03-03 22:33:40
+tags:
+- personal
 ---
 ![Trashcan](http://www.jasonheppler.org/images/trash.png "Trashcan")
 

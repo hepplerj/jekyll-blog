@@ -2,7 +2,9 @@
 layout: post
 title: "Own Your Identity"
 date: Mon Jul 17 11:00:40 -0500 2011
-tags: Identity
+tags:
+- identity
+- internet
 ---
 
 Recently on Boing Boing, Cory Doctorow pointed to [this quote](http://boingboing.net/2011/06/29/why-writers-should-h.html) from John Scalzi arguing that writers needed to register their own domain rather than use Facebook:

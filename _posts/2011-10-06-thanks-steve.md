@@ -1,9 +1,10 @@
 ---
 layout: post
-category: History
 title: "Thanks, Steve"
 date: Thu Oct 06 07:56:58 -0500 2011
-tags: Steve-Jobs Apple
+tags:
+- history
+- apple
 ---
 
 ![Insanely Great](http://jasonheppler.org/images/great.jpg "Insanely Great")

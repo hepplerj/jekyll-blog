@@ -1,9 +1,10 @@
 ---
 layout: post
-category: History
 title: "Remembering Steve Jobs"
 date: Wed Oct 05 19:11:35 -0500 2011
-tags: Steve-Jobs Apple
+tags:
+- apple
+- history
 ---
 
 Tim Cook's <a

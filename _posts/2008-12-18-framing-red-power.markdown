@@ -4,7 +4,9 @@ layout: post
 title: "Framing Red Power: Newspapers and the Trail of Broken Treaties"
 date: 2008-12-18 19:31:02 -06:00
 wordpress_url: http://www.jasonheppler.org/2010/01/26/framing-red-power/
-tags: Research
+tags:
+- research
+- thesis
 ---
 Commentators, participants, and historians have suggested connections  between the media and the political movements of the 1960s and their  interactions that allowed activists to communicate their agendas. By  utilizing media coverage of the Trail of Broken Treaties and ensuing  occupation of the Bureau of Indian Affairs in 1972 by the American  Indian Movement, Indian activists secured a medium in which to voice  their goals.  The study of the relationship between mass media and the  protest movements is important, historian Julia Bond has argued, because  “until historians unravel the complex links between the southern  freedom struggle and the mass media, their understanding of how the  Movement functioned, why it succeeded, and when and where it failed,  will be incomplete."  Bond’s declaration can be extended to other  movements of the 1960s and 1970s that utilized mass media to their  advantage.
 

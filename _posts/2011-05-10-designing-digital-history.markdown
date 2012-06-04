@@ -2,7 +2,9 @@
 layout: post
 title: "Designing Digital History"
 date: Mon May 10 11:25:19 -0500 2011
-tags: Digital-Humanities Design Planning
+tags:
+- digital-humanities
+- design
 ---
 *[This is a thought piece on design and project planning I wrote in 2008 for a course on digital history. I'm placing it here for curation, thought, and discussion.]*
 

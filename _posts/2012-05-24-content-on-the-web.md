@@ -2,6 +2,8 @@
 layout: post
 title: Content on the Web
 date: 2012-05-24 14:01:10
+tags:
+- web
 ---
 
 Dan Cohen [tweets today](https://twitter.com/dancohen/status/205670836693250048):

@@ -2,6 +2,10 @@
 layout: post
 title: 1862 Great Plains Symposium
 date: 2012-03-28 15:19:36
+tags:
+- history
+- research
+- conference
 ---
 
 Starting tonight with a talk by Donald Worster, the Center for Great Plains Studies is hosting their symposium [1862: The Making of the Great Plains](http://www.unl.edu/plains/seminars/2012_Symposium/home.shtml). I'll be at the electronic poster session on Thursday discussing the [William F. Cody Archive](codyarchive.org). Featured speakers at the symposium this year also include Elliott West, Martin Jischke, Richard White, William Thomas, Myron Gutmann, and David Von Drehle.

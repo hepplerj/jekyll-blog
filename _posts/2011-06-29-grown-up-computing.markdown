@@ -2,7 +2,9 @@
 layout: post
 title: "Grown Up Computing"
 date: Wed Jun 30 21:53:14 -0500 2011
-tags: Apple Computers Windows Computing
+tags:
+- apple
+- productivity
 ---
 
 [Marco Arment](http://articles.marco.org/145):

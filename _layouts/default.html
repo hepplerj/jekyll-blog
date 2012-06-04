@@ -15,6 +15,10 @@
    <!-- Main CSS -->
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/footnote-popup.js"></script>
+
    <!-- Google Analytics -->
    <script type="text/javascript">
 
@@ -33,63 +37,49 @@
 </head>
 <body>
 	
-    <div id="masthead_background">
-			
-		<div id="masthead">	
-			<h1><a href="/">History in the Digital</a></h1>
-				
-			<nav>
-			
-		  	  	<a href="/archives.html">Archive</a> • 
-		  		<a href="/about.html">Colophon</a> • 
-		  	  	<a href="http://feeds.feedburner.com/JasonHeppler">RSS</a> • 
-		  	  	<a href="http://twitter.com/jaheppler">Twitter</a> • 
-		  	  	<a href="http://projects.jasonheppler.org">Projects</a> • 
-		  	  	<a href="http://cv.jasonheppler.org/">C.V.</a>
-
-			</nav>
-		</div>
-
-    </div>
+	<header>
+		<h1><a href="/">History in the Digital</a></h1>
+		<p>by <a href="about.html">Jason Heppler</a></p>
+	</header>
 	
+	<nav>
+		<ul>
+	  	  	<li><a href="/archives.html">Archive</a></li>
+	  		<li><a href="/about.html">Colophon</a></li>
+	  	  	<li><a href="http://twitter.com/jaheppler">Twitter</a></li>
+	  	  	<li><a href="http://projects.jasonheppler.org">Projects</a></li>
+	  	  	<li><a href="http://cv.jasonheppler.org/">C.V.</a></li>
+		</ul>
+	</nav>
 	
-  <div id="container">
-
-    <div id="content">
-
-
-      <div class="entry">
-
-      	{{ content }}
-
-      </div>
-
-      <div class="footer">
-
-        <div id="footerinfo">
+	<article>
+		
+		{{ content }}
+	
+	</article>
+	
+	<footer>
+		<p>Tech, geekery, code, coffee.</p>
 			
-			<p>Tech, geekery, code, coffee.</p>
+		<p>
 			
-			<p>
+		<a href="http://jasonheppler.org">Home</a> • 
+		<a href="http://jasonheppler.org/archives.html">Archive</a> • 
+		<a href="http://feeds.feedburner.com/JasonHeppler">RSS</a> • 
+		<a href="http://projects.jasonheppler.org">Projects</a> • 
+		<a href="http://twitter.com/jaheppler">Twitter</a> • 
+		<a href="https://plus.google.com/112447146120355094986/posts">Google+</a> • 
+		<a href="http://blog.jasonheppler.org">Tumbclio</a> • 
+		<a href="http://www.flickr.com/photos/jheppler/">Flickr</a> • 
+		<a href="https://github.com/hepplerj">Github</a> • 
+		<a href="http://cv.jasonheppler.org">C.V.</a>
 			
-			<a href="http://jasonheppler.org">Home</a> • 
-			<a href="http://jasonheppler.org/archives.html">Archive</a> • 
-			<a href="http://feeds.feedburner.com/JasonHeppler">RSS</a> • 
-			<a href="http://projects.jasonheppler.org">Projects</a> • 
-			<a href="http://twitter.com/jaheppler">Twitter</a> • 
-			<a href="https://plus.google.com/112447146120355094986/posts">Google+</a> • 
-			<a href="http://blog.jasonheppler.org">Tumbclio</a> • 
-			<a href="http://www.flickr.com/photos/jheppler/">Flickr</a> • 
-			<a href="https://github.com/hepplerj">Github</a> • 
-			<a href="http://cv.jasonheppler.org">C.V.</a>
-			
-			</p>
-
-                <p>Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.</p>
-                <p>Site powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> and coffee. Written and published by <a href="http://jasonheppler.org">Jason Heppler</a> since 2008.</p>
-        </div>
-
-      </div>
+		</p>
+		
+            <p>Site powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> and coffee. Written and published by <a href="http://jasonheppler.org">Jason Heppler</a> since 2008. Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a></p>
+		
+	</footer>
+		
 
 </body>
 </html>

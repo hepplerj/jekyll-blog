@@ -7,23 +7,26 @@ change_frequency: daily
 priority: 1.0
 ---
 
-  {% for post in site.posts offset: 0 limit: 3 %}
+  {% for post in site.posts offset: 0 limit: 1 %}
   <!--<div id="postmeta">-->
-  <h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a></h2>
+  	<h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <a class="perma" href="http://jasonheppler.org{{ post.url }}">∞</a></h2>
   <!--</div>-->
 
     {{ post.content }}
 	
-	<p><time>{{ post.date | date: "%e" | ordinalize }} {{post.date | date: "%B"}} {{post.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
+	<p><time>{{ post.date | date: "%e" | ordinalize }} {{post.date | date: "%B"}} {{post.date | date: "%Y"}}</time></p>
 
   {% endfor %}
   
-  
-  <h2>More Recent Posts</h2>
+ <section>
+  <h2>Recent Posts</h2>
   <ul>
-  {% for post in site.posts offset: 3 limit: 4 %}
-      <li>
-  		<span>{{ post.date | date_to_string }}</span> &mdash; <a href="{{base.site_url}}{{ post.url }}">{{ post.title }}</a>
+  {% for post in site.posts offset: 1 limit: 5 %}
+  	<li>
+  	  <span>{{ post.date | date_to_string }}</span> &mdash; <a href="{{base.site_url}}{{ post.url }}">{{ post.title }}</a>
   	</li>
     {% endfor %}
   </ul>
+  
+  <p>Visit the <a href="archive.html">Archive</a>.</p>
+  </section>

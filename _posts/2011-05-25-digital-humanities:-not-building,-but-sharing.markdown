@@ -2,7 +2,8 @@
 layout: post
 title: "Digital Humanities: Not Building, But Sharing"
 date: Sat May 25 10:55:16 -0500 2011
-tags: Digital-Humanities
+tags:
+- digital-humanities
 ---
 
 [Mark Sample](http://www.samplereality.com/2011/05/25/the-digital-humanities-is-not-about-building-its-about-sharing/):

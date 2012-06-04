@@ -2,6 +2,8 @@
 layout: post
 title: World Aeropress Championship
 date: 2012-05-15 16:16:56
+tags:
+- coffee
 ---
 
 AeroPress recipes from the World AeroPress Championship. Yes, this exists.

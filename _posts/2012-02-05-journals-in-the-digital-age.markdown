@@ -2,6 +2,9 @@
 layout: post
 title: "Journals in the Digital Age"
 date: Sun Feb 05 09:00:46 -0500 2012 
+tags:
+- history
+- publishing
 ---
 
 > "We should not be committed to the existence of institutions, but to the ends those institutions were created to enable." -[Abby Rumsey](http://twitter.com/#!/dancohen/status/91216381663653888)

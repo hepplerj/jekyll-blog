@@ -27,7 +27,7 @@ end
 desc "nuke and rebuild"
 task :nuke do
     sh 'rm -rf _site'
-    jekyll
+    system "jekyll"
 end
 
 desc "watch the site and regenerate when it changes"
@@ -55,6 +55,8 @@ task :write, [:title, :category] do |t, args|
 layout: post
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+tags:
+- 
 ---
 EOS
     end
@@ -75,6 +77,8 @@ task :draft, [:title, :category] do |t, args|
 layout: post
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-d %k:%M:%S')}
+tags:
+- 
 ---
 EOS
     end

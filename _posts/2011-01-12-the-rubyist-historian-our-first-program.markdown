@@ -1,14 +1,16 @@
---- 
+---
 wordpress_id: 770
 layout: post
 title: "The Rubyist Historian: Our First Program"
 date: 2011-01-12 10:50:41 -06:00
 wordpress_url: http://www.jasonheppler.org/?p=770
-tags: Programming Ruby Rubyist-Historian
+tags: 
+- programming
+- ruby
 ---
-"Okay, Jason," you're asking yourself, "I'm tired of saying hello and counting numbers and doing mathematics. How can Ruby be applied to my work as a humanities scholar?"  I'm thrilled you asked! Because today, we're writing our first full program together.  I'll warn you, this might be a long read and a lot of writing.  But I'm hoping by doing this we experience the process of designing, planning, writing code, optimizing code, debugging, and finally using the program.  <!--more-->
+"Okay, Jason," you're asking yourself, "I'm tired of saying hello and counting numbers and doing mathematics. How can Ruby be applied to my work as a humanities scholar?"  I'm thrilled you asked! Because today, we're writing our first full program together.  I'll warn you, this might be a long read and a lot of writing.  But I'm hoping by doing this we experience the process of designing, planning, writing code, optimizing code, debugging, and finally using the program. 
 
-We're going to write a program based off a homework example we completed in Prof. Steve Ramsay's class (To Steve's future students: don't copy this program. Your professor will know). We're going to take a word frequency generator and read a file off the Internet, strips the HTML or XML tagging out of the file, generate a word frequency, and print the frequency as a new HTML file. A lot will be happening, so I hope I can carefully and concisely explain the details of our program as we go along.  
+We're going to write a program based off a homework example we completed in Prof. Steve Ramsay's class (To Steve's future students: don't copy this program. Your professor will know). We're going to take a word frequency generator and read a file off the Internet, strips the HTML or XML tagging out of the file, generate a word frequency, and print the frequency as a new HTML file. A lot will be happening, so I hope I can carefully and concisely explain the details of our program as we go along. 
 
 One potential way to write our word frequency program is as such: 
 

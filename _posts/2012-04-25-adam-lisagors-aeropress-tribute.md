@@ -2,6 +2,9 @@
 layout: post
 title: Adam Lisagor's AeroPress Tribute
 date: 2012-04-25 21:44:48
+tags:
+- coffee
+- aeropress
 ---
 
 <iframe src="http://player.vimeo.com/video/40980282" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>

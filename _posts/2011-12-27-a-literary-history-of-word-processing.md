@@ -1,10 +1,10 @@
 ---
 author: Jason Heppler
-category: Digital Humanities
 layout: post
 title: "A Literary History of Word Processing"
 date: Tue Dec 27 15:52:45 -0600 2011
-tags: Word-Processing Literary-History
+tags:
+- history
 ---
 
 Great piece in the New York Times featuring the inimitable <a

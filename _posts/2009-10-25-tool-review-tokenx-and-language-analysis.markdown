@@ -1,10 +1,10 @@
 --- 
-wordpress_id: 63
 layout: post
 title: "Tool Review: TokenX and Language Analysis"
 date: 2009-10-25 13:56:27 -05:00
-wordpress_url: http://www.jasonheppler.org/?p=63
-tags: TokenX Review Textual-Analysis
+tags:
+- review
+- text-analysis
 ---
 <em>[This review is cross-posted at <a href="http://digitalhistory.unl.edu/t-reviews/tokenxhepplerrogers.php">Digital History</a>.]</em>
 

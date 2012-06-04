@@ -2,7 +2,8 @@
 layout: post
 title: "The Humanities Done Digitally"
 date: Mon May 09 18:27:56 -0500 2011
-tags: Digital-Humanities
+tags:
+- digital-humanities
 ---
 [Kathleen Fitzpatrick](http://chronicle.com/article/The-Humanities-Done-Digitally/127382/):
 
