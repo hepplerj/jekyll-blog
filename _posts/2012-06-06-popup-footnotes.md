@@ -1,3 +1,18 @@
+---
+layout: post
+title: Popup Footnotes
+date: 2012-06-06  9:26:20
+tags:
+- personal
+---
+
+After discovering [this post](http://www.leancrew.com/all-this/2010/05/a-small-popup-footnote-change/) by Dr. Drang about popup footnotes, I've added the feature to my blog. Now, thanks to some jQuery, when you hover your mouse over a footnote link you'll see a popup box.[^1]
+
+What I like about the implementation is it improves readability. Rather than jumping to the bottom of the post, the footnote appears with the main body of the text and disappears when you're finished with it. 
+
+The code is pretty straight forward:
+
+{% highlight javascript %}
 // this script requires jQuery
 $(document).ready(function() {
     Footnotes.setup();
@@ -76,3 +91,8 @@ var Footnotes = {
         });
     }
 }
+{% endhighlight %}
+
+I've also switched my Jekyll markdown conversion to [kramdown](https://github.com/gettalong/kramdown) (having previously used [rdiscount](https://github.com/rtomayko/rdiscount)), which handles the creation of footnotes and inserts the return character (↩) and hyperlinking between the number and the note.
+
+[^1]: Like this!
