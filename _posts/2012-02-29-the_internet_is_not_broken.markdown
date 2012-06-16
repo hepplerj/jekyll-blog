@@ -2,6 +2,7 @@
 layout: post
 title: The Internet is Not Broken
 date: 2012-02-29 13:36:59
+external-url: https://plus.google.com/u/1/105076678694475690385/posts/3zhRzzSAs8b
 tags:
 - internet
 ---
@@ -14,5 +15,3 @@ Jeff Jarvis:
 > Why? Is it not working? Is it presenting some new danger to society? Is it fundamentally operating any differently today than it was five or ten years ago? No, no, and no.
 > 
 > So why are governments so eager to claim authority over it? Why would legacy corporations, industries, and institutions egg them on? Because the net is working better than ever. Because they finally recognize how powerful it is and how disruptive it is to their power.
-
-[Visit Link →](https://plus.google.com/u/1/105076678694475690385/posts/3zhRzzSAs8b)

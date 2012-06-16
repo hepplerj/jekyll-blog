@@ -2,12 +2,12 @@
 layout: post
 title: Hemingway on Writing
 date: 2012-05-10  9:25:45
+external-url: http://www.theparisreview.org/interviews/4825/the-art-of-fiction-no-21-ernest-hemingway
 tags:
 - writing
 ---
 
-Ernest Hemingway in [a 1958 interview](http://www.theparisreview.org/interviews/4825/the-art-of-fiction-no-21-ernest-hemingway)
- with George Plimpton:
+Ernest Hemingway in a 1958 interview with George Plimpton:
 
 > When I am working on a book or a story I write every morning as soon after first light as possible. There is no one to disturb you and it is cool or cold and you come to your work and warm as you write. You read what you have written and, as you always stop when you know what is going to happen next, you go on from there. You write until you come to a place where you still have your juice and know what will happen next and you stop and try to live through until the next day when you hit it again.
 

@@ -2,6 +2,7 @@
 layout: post
 title: AHA Forming a Task Force on Digital Scholarship
 date: 2012-06-06 12:46:55
+external-url: http://blog.historians.org/news/1664/decisions-of-the-aha-council-june-2012
 tags:
 - digital-humanities
 ---

@@ -4,15 +4,24 @@ title: Archives
 ---
 <h2>Archives</h2>
 
-
+<div id="archives">
 <ul>
   {% for post in site.posts %}
-    <li class="archive_list">
-		<a href="{{base.site_url}}{{ post.url }}">{{ post.title }}</a> <br />
-		<span>{{ post.date | date: '%A, %d %B %Y' }}</span>
-	</li>
+
+    {% unless post.next %}
+      <h2>{{ post.date | date: '%Y' }}</h2>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h2>{{ post.date | date: '%Y' }}</h2>
+      {% endif %}
+    {% endunless %}
+
+    <li><span>{{ post.date | date: '%d %b' }}</span> &raquo; <a href="{{base.site_url}}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+</div>
 
 <div id="cattags">
 <h3>Archive by Topic</h3>

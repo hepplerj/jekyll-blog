@@ -39,7 +39,7 @@ end
 desc "preview site in browser with localhost:4000"
 task :preview do
   puts "Starting site preview in http://localhost:4000."
-  system "jekyll --auto --server"
+  system "jekyll --server"
 end
 
 desc "give title as argument and create new post"

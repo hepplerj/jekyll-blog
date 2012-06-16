@@ -2,6 +2,7 @@
 layout: post
 title: An Alternative GTD System
 date: 2012-06-04 14:40:57
+external-url: http://heydave.org/post/24286720323/gtd-sucks-for-creative-work-heres-an-alternative
 tags:
 - productivity
 ---
@@ -21,7 +22,5 @@ This sort of daily focus and weekly goals keeps me on track for the things I nee
 The current system works well for me. I've thought about making a few changes (for example, moving all the individual todo text lists in individual project directories into their own text files in Notational Velocity to allow for faster searching) but for the time being this works.
 
 (Via [Shawn Blanc](http://shawnblanc.net/2012/06/dave-lee-gtd/).)
-
-[Visit Link →](http://heydave.org/post/24286720323/gtd-sucks-for-creative-work-heres-an-alternative)
 
 [^nvwhat]: I also keep a text file in Notational Velocity called "qq What was I doing" where I'll make a note on what I was working on so I can pick it up the next day. I also have a bash script I use to track git commits that I store in a universalgitlog.txt that I access from Notational Velocity so I have additional notes on work I completed with version controlled projects. Nerdy, yes, but fantastic.

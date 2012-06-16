@@ -7,23 +7,22 @@ change_frequency: daily
 priority: 1.0
 ---
 
-  {% for post in site.posts offset: 0 limit: 3 %}
-<div id="entry">
-  	<h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <a class="perma" href="http://jasonheppler.org{{ post.url }}">∞</a></h2>
+  {% for post in site.posts offset: 0 limit: 12 %}
+  {% if post.external-url %}
+  
+    <div id="entry-link">
+      	<h2><a href="{{ post.external-url }}">{{ post.title }}</a> → </h2>
+        {{ post.content }}
+        <time>{{ post.date | date_to_string }} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time>
+    </div>
+  
+  {% else %}
+    <div id="entry-post">
+      	<h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <a class="perma" href="http://jasonheppler.org{{ post.url }}">∞</a></h2>
+        {{ post.content }}
+        <time>{{ post.date | date_to_string }} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time>
+    </div>
+  
+  {% endif %}
 
-    {{ post.content }}
-</div>
   {% endfor %}
-  
- <section>
-  <h2>Recent Posts</h2>
-  <ul>
-  {% for post in site.posts offset: 3 limit: 5 %}
-  	<li>
-  	  <span>{{ post.date | date_to_string }}</span> &mdash; <a href="{{base.site_url}}{{ post.url }}">{{ post.title }}</a>
-  	</li>
-    {% endfor %}
-  </ul>
-  
-  <p>Visit the <a href="archives.html">Archive</a>.</p>
-  </section>

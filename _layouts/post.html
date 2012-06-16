@@ -1,21 +1,30 @@
 ---
 layout: default
 ---
-<div id="post-{{ id }}" class="post">
-  <div id="postmeta">
-    <h2>{{ page.title }}</h2>
-  </div>
 
-    <div id="post_content">
+{% if page.external-url %}
+
+<div id="entry-link" class="post">
+  <h2><a href="{{ page.external-url }}">{{ page.title }}</a> →</h2>
+  <div id="post_content">
     {{ content }}
-    </div>
+  </div>
+  
+  <p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
+  
 
+{% else %}
+<div id="post-{{ id }}" class="post">
+  <h2>{{ page.title }}</h2>
+  <div id="post_content">
+    {{ content }}
+  </div>
+  
+  <p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
 
-	<p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
+{% endif %}
 	
 	<h4 class="more">
 		<a href="http://www.jasonheppler.org/archives.html">MORE ARTICLES IN THE ARCHIVE →</a>
 	</h4>
-	
-	
 </div>
