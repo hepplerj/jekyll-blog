@@ -11,16 +11,19 @@ priority: 1.0
   {% if post.external-url %}
   
     <div id="entry-link">
-      	<h2><a href="{{ post.external-url }}">{{ post.title }}</a> → </h2>
+        <h2><a href="{{ post.external-url }}">{{ post.title }}</a> → <a class="perma" href="http://jasonheppler.org{{ post.url }}">∞</a> </h2>
         {{ post.content }}
-        <time>{{ post.date | date_to_string }} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time>
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
     </div>
   
   {% else %}
     <div id="entry-post">
-      	<h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <a class="perma" href="http://jasonheppler.org{{ post.url }}">∞</a></h2>
+      <div class="articlebreak">
+        <p>∞</p>
+      </div>
+      	<h2><a href="http://jasonheppler.org{{ post.url }}">{{ post.title }}</a> <time>{{ post.date | date: "%Y-%m-%d" }}</time></h2> 
+        
         {{ post.content }}
-        <time>{{ post.date | date_to_string }} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time>
     </div>
   
   {% endif %}

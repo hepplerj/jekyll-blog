@@ -60,8 +60,31 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in TextMate..."
-    system "mate #{path}"
+    puts "Now opening #{path} in Sublime Text..."
+    system "sublime #{path}"
+end
+
+desc "give title as argument and create new post"
+# usage rake link["Post Title Goes Here", link]
+# category is optional
+task :link, [:title, :hreflink] do |t, args|
+  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '-').downcase}.md"
+  path = File.join("_posts", filename)
+  if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
+  File.open(path, 'w') do |file|
+    file.write <<-EOS
+---
+layout: post
+title: #{args.title}
+external-url: #{args.hreflink}
+date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+tags:
+- 
+---
+EOS
+    end
+    puts "Now opening #{path} in Sublime Text..."
+    system "sublime #{path}"
 end
 
 desc "give title as argument for draft post"
@@ -82,6 +105,6 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in TextMate..."
-    system "mate #{path}"
+    puts "Now opening #{path} in Sublime Text..."
+    system "sublime #{path}"
 end

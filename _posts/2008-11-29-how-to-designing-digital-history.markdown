@@ -1,9 +1,7 @@
 --- 
-wordpress_id: 53
 layout: post
 title: "How To: Designing Digital History"
 date: 2008-11-29 12:12:29 -06:00
-wordpress_url: http://www.jasonheppler.org/?p=53
 tags:
 - design
 - digital-humanities
@@ -27,28 +25,33 @@ The most basic element of web design is <a href="http://www.w3schools.com/html/d
 <a href="http://www.adobe.com/products/dreamweaver/" target="_blank">Dreamweaver</a>:  Or its open-source and free alternative, <a href="http://kompozer.net/" target="_blank">Kompozer</a>.  These  two programs are <a href="http://en.wikipedia.org/wiki/WYSIWYG" target="_blank">WYSIWYG</a> web authoring software packages.  The nice thing about WISIWYG-based  web authoring is it doesn't require coding knowledge to design sites.   The easiest and most common design is table-based layouts, which  Dreamweaver handles very well. For more advanced design, Dreamweaver can  handle <a href="http://www.w3schools.com/css/css_reference.asp" target="_blank">CSS</a>, <a href="http://www.w3schools.com/jsref/default.asp" target="_blank">Javascript</a>,  <a href="http://www.asp.net/" target="_blank">ASP.NET</a>, <a href="http://www.adobe.com/products/coldfusion/" target="_blank">ColdFusion</a>,  <a href="http://en.wikipedia.org/wiki/JavaServer_Pages" target="_blank">JavaServer  Pages</a>, and <a href="http://www.w3schools.com/php/php_ref_array.asp" target="_blank">PHP</a>.
 
 <a href="http://www.oxygenxml.com/">Oxygen  XML Editor</a> or <a href="http://www.download.com/XML-Marker/3000-7241_4-10202365.html" target="_blank">XML Marker</a>:  eXtensible Markup Language (<a href="http://www.w3schools.com/xml/default.asp" target="_blank">XML</a>)  is designed for sharing and structuring data on the web that allows  users to define mark-up elements.  For example, a newspaper article of  mine looks like this (slightly abbreviated):
-<pre style="padding-left: 30px;">&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;sourceDesc&gt;
-&lt;bibl&gt;
-&lt;author n="Blair, William M."&gt;William M. Blair&lt;/author&gt;
-&lt;title level="a" type="main"&gt;"500 Indians Seize U.S. Building After Scuffle With Capital Police"&lt;/title&gt;
-&lt;title level="j"&gt;New York Times&lt;/title&gt;
-&lt;pubPlace&gt;New York&lt;/pubPlace&gt;
-&lt;date value="1972-11-03"&gt;03 November 1972&lt;/date&gt;
-&lt;biblScope type="page"&gt;81&lt;/biblScope&gt;
-&lt;/bibl&gt;
-&lt;/sourceDesc&gt;
 
-&lt;text&gt;
-&lt;body&gt;
+{% highlight xml %}
+<?xml version="1.0" encoding="utf-8"?>
+<sourceDesc>
+<bibl>
+<author n="Blair, William M.">William M. Blair</author>
+<title level="a" type="main">"500 Indians Seize U.S. Building After Scuffle With Capital Police"</title>
+<title level="j">New York Times</title>
+<pubPlace>New York</pubPlace>
+<date value="1972-11-03">03 November 1972</date>
+<biblScope type="page">81</biblScope>
+</bibl>
+</sourceDesc>
 
-&lt;div1 type="body"&gt;
+<text>
+<body>
 
-&lt;head type="main"&gt;500 Indians Seize U.S. Building After Scuffle With Capital Police&lt;/head&gt;
-&lt;p&gt;About 500 American Indians protesting injustices, took control tonight of the Bureau of Indian Affairs....&lt;/p&gt;
-&lt;/div1&gt;
-&lt;/body&gt;
-&lt;/text&gt;</pre>
+<div1 type="body">
+
+<head type="main">500 Indians Seize U.S. Building After Scuffle With Capital Police</head>
+<p>About 500 American Indians protesting injustices, took control tonight of the Bureau of Indian Affairs....</p>
+</div1>
+</body>
+</text>
+
+{% endhighlight %}
+
 The document conforms to <a href="http://www.tei-c.org/index.xml" target="_blank">Text Encoding  Initiative</a> standards.  Most importantly, XML defines the elements  behind my newspaper article and preserves the original text.  My  editorial decisions for tagging elements has little impact on the text  itself.  My site makes the XML code freely available for users so they  can download the source files and edit them and use them as they need.
 
 <strong>Resources</strong>:
