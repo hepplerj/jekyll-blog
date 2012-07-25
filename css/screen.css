@@ -8,58 +8,129 @@
 */
 
 html {
-	background: white /*#F7F6EE*/;
-	color: #444;
+	background: whiteSmoke /*#F7F6EE*/;
+	color: #333;
 }
 
 body {
-	font: 12pt/18pt 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	line-height: 1.6em;
+	font: 18px/25px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	line-height: 1.7em;
 	margin: 0 auto;
 }
 
 #topwrap {
+	border-bottom: 1px solid #e5e5e5;
+	color: white;
+	opacity: .5;
+	overflow: hidden;
+	padding: 5px 0;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+	-webkit-transition: opacity .5s ease-in-out, color .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out, color .5s ease-in-out;
+	transition: opacity .5s ease-in-out, color .5s ease-in-out;
+}
+
+#slogan {
+	float: right;
+	margin-right: 40px;
+}
+
+#slogan a {
+	color: white;
+	padding-bottom: 3px;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+	text-shadow: none;
+}
+
+#topwrap:hover {
+	color: #999;
+	opacity: 1;
+}
+
+#topwrap:hover #slogan a {
+	color: #999;
+}
+
+#main-content {
+	border-top: 1px solid white;
+	text-shadow: 0 1px 0 white;
+}
+
+/*
+#topwrap {
 	opacity: 0.5;
-	transition: opacity .25s ease-in-out;
-   	-moz-transition: opacity .25s ease-in-out;
-   	-webkit-transition: opacity .25s ease-in-out;
+	color: white;
+	transition: opacity .5s ease-in-out;
+   	-moz-transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+   	border-bottom: 1px solid #e5e5e5;
+   	padding: 50px 0;
 }
 
 #topwrap:hover {
 	opacity: 1;
 }
 
-header {
-		width: 100%;
-		position: relative;
-		top: auto;
-		left: auto;
-		right: auto;
-		text-align: center;
-		margin: 46px auto 23px;
+#slogan a {
+	color: white;
+	font-family: 'Lato', sans-serif;
 
-	}
+}
+
+#slogan a {
+	color: #999;
+}
+*/
+
+/*
+#topwrap .slogan {
+	font-style: italic;
+	float: right;
+	margin-right: 40px;
+}
+
+#topwrap a.slogan {
+	color: white;
+	padding-bottom: 3px;
+	text-shadow: none;
+}
+
+#topwrap a.slogan:hover {
+	color: #00a1f2;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+*/
+header {
+	width: 100%;
+	position: relative;
+	top: auto;
+	left: auto;
+	right: auto;
+	text-align: center;
+}
+
+header span {
+	color: black;
+}
 
 header h1 {
-	margin-bottom: 0;
 	font-size: 1.8em;
-	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
 
 header p {
 	margin: 0;
-	font-style: italic;
 	font-size: 12px;
-	font-family: 'Lato', sans-serif;
 }
 	
 	nav {
-		width: 100%;
 		position: relative;
-		top: auto;
-		left: auto;
-		right: auto;
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -74,44 +145,6 @@ header p {
 		display: inline-block;
 		margin: 0 10px;
 	}
-
-#topdropwrapper {
-	height: 20px;
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	z-index: 999;
-}
-
-#topdrop {
-	height: 20px;
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	background-color: #333;
-}
-
-ul#topdropmenu {
-	position: absolute;
-	left: 50%;
-	margin-left: -300px;
-}
-
-#topdrop li {
-	float: left;
-	list-style: none;
-	margin: 0 10px;
-}
-
-#topdrop a {
-	display: block;
-	color: white;
-	font-weight: 700;
-	text-transform: uppercase;
-	height: 30px;
-	float: left;
-	padding: 0 10px;
-}
 
 .articlebreak p {
 	color: #e4e4e4;
@@ -166,16 +199,15 @@ nav li a {
 }
 
 nav li a:hover {
-	color: #A14623;
+	color: #00A1F2;
 }
 */
 p {
 	margin: 9pt 0 18pt;
-	line-height: 18pt;
 }
 
 article {
-	width: 600px;
+	width: 740px;
 	margin: 120px auto;
 }
 
@@ -216,11 +248,13 @@ sup {
 }
 
 blockquote {
-    color: #666;
+    color: #555;
+    font-style: italic;
     margin-bottom: 0px;
-    border-left: 1.5pt solid #a14623;
+    border-left: 0.25em solid #f0f0f0;
     padding-left: 1em;
     margin-left: 0;
+    margin-top: -18px;
 }
 
 section {
@@ -261,7 +295,7 @@ a.perma {
 
 a:hover.perma {
 	background: none;
-	color: #A14623;
+	color: #00A1F2;
 	border: none;
 }
 
@@ -270,7 +304,7 @@ LINKS
 */
 
 a {
-    color: #A14623;
+    color: #00A1F2;
     text-decoration: none;
 }
 
@@ -336,8 +370,9 @@ ul {
 }
 
 ::selection {
-	background-color: #a14623;
-	color: white;
+	background-color: #A6DDFB;
+	color: black;
+	text-shadow: none;
 }
 
 #entry-post {

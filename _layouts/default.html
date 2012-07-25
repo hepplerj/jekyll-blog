@@ -7,6 +7,7 @@
 	<!-- Google fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 
 
    <!-- Syntax highlighting CSS -->
@@ -15,10 +16,14 @@
    <!-- Main CSS -->
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
+   <!-- Embedded tweets CSS -->
+   <link rel="stylesheet" href="/css/tweet.css" type="text/css" />
+
 	<!-- JQuery -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/footnote-popup.js"></script>
     <script type="text/javascript" src="http://jasonheppler.org/js/projects.js"></script>
+    <script type="text/javascript" src="http://jasonheppler.org/js/styleTweets.js"></script>
 
    <!-- Google Analytics -->
    <script type="text/javascript">
@@ -37,11 +42,11 @@
 
 </head>
 <body>
-
 <div id="topwrap">
+
 	<header>
-		<h1><a href="/">History in the Digital</a></h1>
-		<p>by <a href="about.html">Jason Heppler</a></p>
+		<h1><a href="/">jason<span>heppler</span></a></h1>
+		<p class="slogan">☕ coffee, code, history</p>
 	</header>
 	
 	<nav>
@@ -53,7 +58,9 @@
 	  	  	<li><a href="http://cv.jasonheppler.org/">C.V.</a></li>
 		</ul>
 	</nav>
+
 </div>
+<div id="main-content">
 	<article>
 		
 		{{ content }}
@@ -68,6 +75,8 @@
 	<a href="#" onclick="Effect.ScrollTo('topwrap'); return false;" style="display: block; " id="return_to_top">
 		<div class="return_to_top_icon"></div>
 	</a>
+
+</div>
 
 </body>
 </html>
