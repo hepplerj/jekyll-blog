@@ -16,15 +16,13 @@ layout: default
 {% else %}
 <div id="post-{{ id }}" class="post">
   <h2>{{ page.title }}</h2>
+  <p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}}</time></p>
   <div id="post_content">
     {{ content }}
   </div>
-  
-  <p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
 
 {% endif %}
-	
-	<h4 class="more">
-		<a href="http://www.jasonheppler.org/archives.html">MORE ARTICLES IN THE ARCHIVE →</a>
-	</h4>
+
+<p class="tweet-me">Have anything to add? <a href="http://twitter.com/jaheppler">Tweet</a> at me.</p>
+
 </div>

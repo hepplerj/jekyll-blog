@@ -2,79 +2,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta content="The online writing of Jason Heppler" name="description"/>
 <title>{{ page.title }}</title> <meta name="author" content="Jason Heppler" />
-
-	<!-- Google fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-
-
-   <!-- Syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-
-   <!-- Main CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
-   <!-- Embedded tweets CSS -->
-   <link rel="stylesheet" href="/css/tweet.css" type="text/css" />
-
-	<!-- JQuery -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/footnote-popup.js"></script>
-    <script type="text/javascript" src="http://jasonheppler.org/js/projects.js"></script>
-    <script type="text/javascript" src="http://jasonheppler.org/js/styleTweets.js"></script>
-
-   <!-- Google Analytics -->
-   <script type="text/javascript">
-
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-12786552-1']);
-     _gaq.push(['_trackPageview']);
-
-     (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-   </script>
-
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/css/tweet.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://jasonheppler.org/js/footnote-popup.js"></script>
+<script type="text/javascript" src="http://jasonheppler.org/js/projects.js"></script>
+<script type="text/javascript" src="http://jasonheppler.org/js/styleTweets.js"></script>
+{% include analytics.html %}
 </head>
 <body>
-<div id="topwrap">
 
-	<header>
-		<h1><a href="/">jason<span>heppler</span></a></h1>
-		<p class="slogan">☕ coffee, code, history</p>
-	</header>
-	
-	<nav>
-		<ul>
-	  	  	<li><a href="/archives.html">Archive</a></li>
-	  		<li><a href="/about.html">Colophon</a></li>
-	  	  	<li><a href="http://twitter.com/jaheppler">Twitter</a></li>
-	  	  	<li><a href="http://projects.jasonheppler.org">Projects</a></li>
-	  	  	<li><a href="http://cv.jasonheppler.org/">C.V.</a></li>
-		</ul>
-	</nav>
-
+<div id="tophead">
+	<ul>
+		<li>
+			<a href="/">Jason Heppler</a>
+		</li>
+		<li>
+			<a href="/archives.html">Archive</a>
+		</li>
+		<li>
+			<a href="/about.html">Colophon</a>
+		</li>
+		<li>
+			<a href="http://twitter.com/jaheppler">Twitter</a>
+		</li>
+		<li>
+			<a href="http://projects.jasonheppler.org">Projects</a>
+		</li>
+		<li>
+			<a href="http://cv.jasonheppler.org/">C.V.</a>
+		</li>
+	</ul>
 </div>
+
 <div id="main-content">
 	<article>
 		
 		{{ content }}
 	
 	</article>
-	
 
 	<footer>
 		Tech, history, code, coffee • Written by <a href="http://jasonheppler.org/about.html">Jason Heppler</a> • Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> • Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a> • <a href="http://www.jasonheppler.org/feed.xml">Subscribe to RSS</a>
 	</footer>
-
-	<a href="#" onclick="Effect.ScrollTo('topwrap'); return false;" style="display: block; " id="return_to_top">
-		<div class="return_to_top_icon"></div>
-	</a>
 
 </div>
 

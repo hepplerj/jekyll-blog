@@ -8,12 +8,9 @@ pygments:       true
 markdown:       kramdown
 #permalink:      /:title.html
 
-name: History in the Digital
+name: 			History in the Digital
 base_url:       http://jasonheppler.org
-description:    "A blog covering digital history, humanities computing, and the cultural history of computers"
+description:    "A blog covering digital history, technology, and the cultural history of computers"
 root_desc:      "JasonHeppler.org - History in the Digital"
-
-rdiscount:
-    extensions: []
 
 exclude: ['Rakefile', 'README.markdown', 'config.rb']
