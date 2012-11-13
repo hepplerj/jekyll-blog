@@ -7,6 +7,7 @@ wordpress_url: http://www.jasonheppler.org/?p=859
 tags:
 - ruby
 - programming
+category: Original
 ---
 We're entering the final leg of our journey.  We've covered a lot of topics in the last few sections, but I just have a couple of things to touch on before we move on to writing our first full program together.
 

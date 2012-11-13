@@ -10,6 +10,7 @@ tags:
 - programming
 - visualization
 - textanalysis
+category: Original
 ---
 Late last year I released a word frequency generator into the wild on Github. I've since updated the program to a more advanced version.
 

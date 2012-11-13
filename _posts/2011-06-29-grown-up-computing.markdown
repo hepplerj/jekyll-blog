@@ -5,6 +5,7 @@ date: Wed Jun 30 21:53:14 -0500 2011
 tags:
 - apple
 - productivity
+category: Original
 ---
 
 [Marco Arment](http://articles.marco.org/145):

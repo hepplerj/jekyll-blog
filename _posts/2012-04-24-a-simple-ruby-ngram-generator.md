@@ -6,6 +6,7 @@ tags:
 - ruby
 - scripting
 - terminal
+category: Digital Humanities
 ---
 
 I was playing around with Ruby the other night and wrote a simple n-gram generator. In case anyone is interested, here is the script:

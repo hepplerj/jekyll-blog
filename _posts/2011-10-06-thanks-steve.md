@@ -5,6 +5,7 @@ date: Thu Oct 06 07:56:58 -0500 2011
 tags:
 - history
 - apple
+category: Apple
 ---
 
 ![Insanely Great](http://jasonheppler.org/images/great.jpg "Insanely Great")

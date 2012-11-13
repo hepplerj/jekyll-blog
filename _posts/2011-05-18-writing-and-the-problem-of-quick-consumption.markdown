@@ -2,8 +2,10 @@
 layout: post
 title: "Writing and the Problem of Quick Consumption"
 date: Sat May 18 10:59:13 -0500 2011
+external-url: http://www.instapaper.com/faq
 tags:
 - writing
+category: Link
 ---
 
 [Marco Arment](http://www.instapaper.com/faq):

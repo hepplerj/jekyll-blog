@@ -6,11 +6,11 @@ includes:       ./_includes
 
 pygments:       true
 markdown:       kramdown
-#permalink:      /:title.html
+permalink:      /:year/:month/:day/:title.html
 
-name: 			History in the Digital
+name: 	        JasonHeppler.org		
 base_url:       http://jasonheppler.org
 description:    "A blog covering digital history, technology, and the cultural history of computers"
-root_desc:      "JasonHeppler.org - History in the Digital"
+root_desc:      "JasonHeppler.org"
 
 exclude: ['Rakefile', 'README.markdown', 'config.rb']

@@ -5,6 +5,7 @@ date: Wed Oct 05 19:11:35 -0500 2011
 tags:
 - apple
 - history
+category: Apple
 ---
 
 Tim Cook's <a

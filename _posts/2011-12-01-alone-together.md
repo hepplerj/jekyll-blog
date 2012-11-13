@@ -7,6 +7,7 @@ tags:
 - unl-dhs 
 - robotics
 - machine-learning
+category: Original
 ---
 
 *[This is a reading reflection for HIST946: Digital Humanities for Prof. William G. Thomas during the Fall 2011 semester. This week's readings was Sherry Turkle, *[Alone Together: Why We Expect More from Technology and Less from Each Other](http://www.amazon.com/Alone-Together-Expect-Technology-Other/dp/0465010210/ref=sr_1_1?ie=UTF8&qid=1322694464&sr=8-1)*. You can find related posts [here](http://jasonheppler.org/the-digital-humanities-seminar.html).]*

@@ -2,8 +2,10 @@
 layout: post
 title: "Dropbox Breach Affects Fewer Than 100 Accounts"
 date: Sun Jun 26 20:09:09 -0500 2011
+external-url: http://techcrunch.com/2011/06/24/dropbox-breach-fewer-than-100-accounts-affected-but-one-person-actively-exploited-it/
 tags:
 - dropbox
+category: Link
 ---
 [Jason Kincaid](http://techcrunch.com/2011/06/24/dropbox-breach-fewer-than-100-accounts-affected-but-one-person-actively-exploited-it/) at AOL/TechCrunch:
 

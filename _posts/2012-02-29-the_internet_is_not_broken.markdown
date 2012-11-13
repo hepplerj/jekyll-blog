@@ -5,10 +5,11 @@ date: 2012-02-29 13:36:59
 external-url: https://plus.google.com/u/1/105076678694475690385/posts/3zhRzzSAs8b
 tags:
 - internet
+category: Link
 ---
-Jeff Jarvis:
+[Jeff Jarvis asks why there are so many attempts to regulate the internet](https://plus.google.com/u/1/105076678694475690385/posts/3zhRzzSAs8b), and speculates that the reason is because the internet disrupts power held by corporations and governments:
 
-> The internet’s not broken.
+> The internet's not broken.
 > 
 > So then why are there so many attempts to regulate it? Under the guises of piracy, privacy, pornography, predators, indecency, and security, not to mention censorship, tyranny, and civilization, governments from the U.S. to France to Germany to China to Iran to Canada — as well as the European Union and the United Nations — are trying to exert control over the internet.
 > 

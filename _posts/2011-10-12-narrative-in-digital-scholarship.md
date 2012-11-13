@@ -7,6 +7,7 @@ tags:
 - unl-dhs
 - scholarship
 - writing
+category: Original
 ---
 
 *[This is a reading reflection for HIST946: Digital Humanities with Professor William

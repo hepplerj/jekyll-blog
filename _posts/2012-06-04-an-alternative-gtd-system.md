@@ -5,9 +5,10 @@ date: 2012-06-04 14:40:57
 external-url: http://heydave.org/post/24286720323/gtd-sucks-for-creative-work-heres-an-alternative
 tags:
 - productivity
+category: Link
 ---
 
-Dave Lee:
+[Dave Lee explains an alternative GTD system](http://heydave.org/post/24286720323/gtd-sucks-for-creative-work-heres-an-alternative) for knowledge workers:
 
 > The most important thing for the creative innovator is not a ton of tasks to do but rather the ability to see what’s important to focus on and to focus on that deeply. The creative innovator needs to go deep on a feature or issue, and the deeper they go the more creativity they unleash.
 

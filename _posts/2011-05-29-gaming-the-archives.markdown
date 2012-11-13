@@ -2,9 +2,11 @@
 layout: post
 title: "Gaming the Archives"
 date: Sat May 29 10:49:54 -0500 2011
+external-url: http://chronicle.com/blogs/wiredcampus/gaming-the-archives/31435
 tags:
 - archives
 - gaming
+category: Link
 ---
 [Jennifer Howard](http://chronicle.com/blogs/wiredcampus/gaming-the-archives/31435):
 

@@ -6,11 +6,12 @@ date: Sat Dec 17 15:43:45 -0700 2011
 tags:
 - research
 - productivity
+category: Original
 ---
 
 I am a young historian -- heck, I barely even qualify for that title when I have no book to my name and don't hold a PhD yet. But as a researcher very early in my career, one thing I think about frequently is the legacy of the digital files that I create. Perhaps it's a residual anxiety that accompanies the idea that physical files will "last" or are more easily preserved that I continue to hold on to.
 
-But this is silly. After all, like the Kindle, we've built systems that are sustainable and won't fall apart (or, knock on wood, succumb to fire or water). Our digital files, if we think carefully about them, are transferrable between operating systems and platforms with relative ease and are much easier to store and back up.
+But this is silly. After all, like the Kindle, we've built systems that are sustainable and won't fall apart (or, knock on wood, succumb to fire or water). Our digital files, if we think carefully about them, are transferable between operating systems and platforms with relative ease and are much easier to store and back up.
 
 Maybe I'm just vain, but I hope someday to be able to donate all the research material I amass to a library for preservation. I feel, though, that I shouldn't just leave it up to future archivists or librarians to figure out how to get my stuff off a hard drive (or whatever storage platform awaits us in the future). For my own reasons I want my data transferable -- I want to avoid lock in. But I also want my data future-proofed as well as I can humanly make it.
 

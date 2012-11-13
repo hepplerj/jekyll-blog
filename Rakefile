@@ -33,7 +33,7 @@ end
 desc "watch the site and regenerate when it changes"
 task :watch do
   puts "Starting to watch source with Jekyll."
-  system "jekyll --auto"
+  system "jekyll --server --auto"
 end
 
 desc "preview site in browser with localhost:4000"
@@ -43,7 +43,7 @@ task :preview do
 end
 
 desc "give title as argument and create new post"
-# usage rake write["Post Title Goes Here"]
+# usage rake write["Post Title Goes Here",category]
 # category is optional
 task :write, [:title, :category] do |t, args|
   filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '-').downcase}.md"
@@ -57,11 +57,12 @@ title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 tags:
 - 
+category: #{args.category}
 ---
 EOS
     end
-    puts "Now opening #{path} in Sublime Text..."
-    system "sublime #{path}"
+    puts "Now opening #{path} in TextMate..."
+    system "mate #{path}"
 end
 
 desc "give title as argument and create new post"
@@ -80,15 +81,16 @@ external-url: #{args.hreflink}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 tags:
 - 
+category: Link
 ---
 EOS
     end
-    puts "Now opening #{path} in Sublime Text..."
-    system "sublime #{path}"
+    puts "Now opening #{path} in TextMate..."
+    system "mate #{path}"
 end
 
 desc "give title as argument for draft post"
-# usage rake draft["Post Title Goes Here"]
+# usage rake draft["Post Title Goes Here",category]
 # category is optional
 task :draft, [:title, :category] do |t, args|
   filename = "#{Time.now.strftime('%Y-%m-d')}-#{args.title.gsub(/\s/, '-').downcase}.md"
@@ -102,9 +104,10 @@ title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-d %k:%M:%S')}
 tags:
 - 
+category: #{args.category}
 ---
 EOS
     end
-    puts "Now opening #{path} in Sublime Text..."
-    system "sublime #{path}"
+    puts "Now opening #{path} in TextMate..."
+    system "mate #{path}"
 end

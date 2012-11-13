@@ -2,8 +2,10 @@
 layout: post
 title: Towards Better PDF Management with the Filesystem
 date: 2012-08-13  8:30:09
+post-type: full
 tags:
-- 
+- productivity
+category: articles
 ---
 *[This post originally appeared at [Gradhacker](http://www.gradhacker.org/2012/08/13/towards-better-pdf-management-with-the-filesystem/) on 2012-08-13]*
 

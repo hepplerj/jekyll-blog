@@ -5,8 +5,9 @@ external-url: http://www.extremetech.com/extreme/134041-inside-nasas-curiosity-i
 date: 2012-08-08  6:49:15
 tags:
 - technology
+category: Link
 ---
-Sebastian Anthony:
+Sebastian Anthony writes about the [technical specifications that underly the Mars rover](http://www.extremetech.com/extreme/134041-inside-nasas-curiosity-its-an-apple-airport-extreme-with-wheels):
 
 > In Curiosity’s case, the CPU is a PowerPC 750 (PowerPC G3 in Mac nomenclature) clocked at around 200MHz — which might seem slow, but it’s still hundreds of times faster than, say, the Apollo Guidance Computer used in the first Moon landings. Also on the motherboard are 256MB of DRAM, and 2GB of flash storage — which will be used to store video and scientific data before transmission to Earth. […]
 > 

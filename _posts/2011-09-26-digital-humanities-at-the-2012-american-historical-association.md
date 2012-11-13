@@ -5,6 +5,7 @@ date: Mon Sep 26 20:49:20 -0500 2011
 tags:
 - unl-dhs
 - conference
+category: Academe
 ---
 
 Today's announcement from the American Historical Association regarding their

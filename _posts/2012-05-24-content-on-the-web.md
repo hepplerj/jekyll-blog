@@ -5,9 +5,10 @@ date: 2012-05-24 14:01:10
 external-url: https://twitter.com/dancohen/status/205670836693250048
 tags:
 - web
+category: Link
 ---
 
-Dan Cohen:
+[Dan Cohen on the lack of publicly-created material on the web](https://twitter.com/dancohen/status/205670836693250048):
 
 > Over 70% of new content on the web is now produced by individuals, & very little of it can be archived because it's in places like Facebook.
 

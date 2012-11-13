@@ -7,6 +7,7 @@ wordpress_url: http://www.jasonheppler.org/?p=587
 tags:
 - ruby
 - programming
+category: Original
 ---
 In our last section I introduced some Ruby programming basics. Now we're moving in to methods and classes. <!--more-->
 

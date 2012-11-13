@@ -2,8 +2,10 @@
 layout: post
 title: "Why Macs Cost More Than PCs"
 date: Sun Jun 26 20:17:15 -0500 2011
+external-url: http://mattrichman.tumblr.com/post/6844151919/a-consequence-of-losing-the-pc-wars
 tags:
 - apple
+category: Link
 ---
 
 [Matt Richman](http://mattrichman.tumblr.com/post/6844151919/a-consequence-of-losing-the-pc-wars) crunches the numbers:

@@ -2,9 +2,11 @@
 layout: post
 title: Go Be Awesome
 date: 2011-03-13 23:05:55 -05:00
+external-url: https://www.youtube.com/watch?v=UF8uR6Z6KLc
 tags:
 - apple
 - productivity
+category: Link
 ---
 <iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/UF8uR6Z6KLc" frameborder="0" allowfullscreen></iframe>
 

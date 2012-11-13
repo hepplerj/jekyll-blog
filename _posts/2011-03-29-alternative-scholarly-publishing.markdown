@@ -2,8 +2,10 @@
 layout: post
 title: Alternative Scholarly Publishing
 date: 2011-03-29 22:06:56 -05:00
+external-url: http://informationr.net/ir/16-1/paper469.html
 tags:
 - publishing
+category: Link
 ---
 
 [John Houghton](http://informationr.net/ir/16-1/paper469.html): 

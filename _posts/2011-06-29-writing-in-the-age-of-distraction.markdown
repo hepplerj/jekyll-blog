@@ -2,8 +2,10 @@
 layout: post
 title: "Writing in the Age of Distraction"
 date: Wed Jun 29 18:16:07 -0500 2011
+external-url: http://www.locusmag.com/Features/2009/01/cory-doctorow-writing-in-age-of.html
 tags:
 - writing
+category: Link
 ---
 Some good writing advice from [Cory Doctorow](http://www.locusmag.com/Features/2009/01/cory-doctorow-writing-in-age-of.html):
 

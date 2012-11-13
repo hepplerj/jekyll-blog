@@ -1,0 +1,23 @@
+---
+layout: post
+title: Opening Marked in Vim
+date: 2012-10-16 17:01:51
+tags:
+- vim
+- marked
+category: Original
+---
+
+I am a big fan of [Brett Terpstra's Marked.app](http://markedapp.com/) for previewing Markdown documents. I wanted a way to launch Marked from within vim so I can preview what I'm writing as I am working. The task is easy. In your <code>.vimrc</code> file, add the line:
+
+{% highlight vim %}
+:nnoremap <leader>ma :silent !open -a Marked.app '%:p'<cr>
+{% endhighlight %}
+
+I have my <code>leader</code> mapped to <code>,</code> (comma), so if I want to launch Marked in a markdown file I'm writing, I just type <code>,ma</code> and it launches the app. 
+
+**UPDATE**: [Lincoln Mullen](http://www.lincolnmullen.com) points out that console vim does not redraw after <code>:silent</code> and modified the command slightly:
+
+{% highlight vim %}
+:nnoremap <leader>ma :silent !open -a Marked.app '%:p' :redraw!<cr>
+{% endhighlight %}
