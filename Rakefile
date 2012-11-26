@@ -56,13 +56,12 @@ layout: post
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 tags:
-- 
-category: #{args.category}
+- #{args.category}
 ---
 EOS
     end
-    puts "Now opening #{path} in TextMate..."
-    system "mate #{path}"
+    puts "Now opening #{path} in Sublime Text..."
+    system "subl #{path}"
 end
 
 desc "give title as argument and create new post"
@@ -80,13 +79,12 @@ title: #{args.title}
 external-url: #{args.hreflink}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 tags:
-- 
-category: Link
+- link
 ---
 EOS
     end
-    puts "Now opening #{path} in TextMate..."
-    system "mate #{path}"
+    puts "Now opening #{path} in Sublime Text..."
+    system "subl #{path}"
 end
 
 desc "give title as argument for draft post"
@@ -103,11 +101,10 @@ layout: post
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-d %k:%M:%S')}
 tags:
-- 
-category: #{args.category}
+- #{args.category}
 ---
 EOS
     end
-    puts "Now opening #{path} in TextMate..."
-    system "mate #{path}"
+    puts "Now opening #{path} in Sublime Text..."
+    system "subl #{path}"
 end

@@ -25,4 +25,10 @@ layout: default
 
 <p class="tweet-me">Have anything to add? <a href="http://twitter.com/jaheppler">Tweet</a> at me.</p>
 
+<ul class="tag_list">
+{% for tag in page.tags %}
+#<li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+
 </div>

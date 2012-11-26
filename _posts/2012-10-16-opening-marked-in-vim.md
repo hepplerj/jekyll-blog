@@ -16,8 +16,11 @@ I am a big fan of [Brett Terpstra's Marked.app](http://markedapp.com/) for previ
 
 I have my <code>leader</code> mapped to <code>,</code> (comma), so if I want to launch Marked in a markdown file I'm writing, I just type <code>,ma</code> and it launches the app. 
 
-**UPDATE**: [Lincoln Mullen](http://www.lincolnmullen.com) points out that console vim does not redraw after <code>:silent</code> and modified the command slightly:
+<div class="update">
+<p><strong>UPDATE 10/16/12</strong><br/>
+<a href="http://www.lincolnmullen.com">Lincoln Mullen</a> points out that console vim does not redraw after <code>:silent</code> and modified the command slightly:</p>
 
 {% highlight vim %}
 :nnoremap <leader>ma :silent !open -a Marked.app '%:p' :redraw!<cr>
 {% endhighlight %}
+</div>
