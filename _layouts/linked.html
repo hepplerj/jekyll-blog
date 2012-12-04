@@ -1,0 +1,25 @@
+---
+layout: default
+title: Archives
+---
+<h2>Archives</h2>
+
+<div id="archive">
+<ul>
+      {% for post in site.posts %}
+          {% unless post.next %}
+                <h2 class="archive_header">{{ post.date | date: '%Y' }}</h2>
+                {% else %}
+                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                {% if year != nyear %}
+                <h2 class="archive_header">{{ post.date | date: '%Y' }}</h2>
+                {% endif %}
+          {% endunless %}
+          {% if post.external-url %}
+        <li class="archive_list"><span>{{ post.date | date: '%b %d' }}</span> <a href="{{base.site_url}}{{ post.url }}">{{ post.title }}</a></li>
+          {% else %}
+        {% endif %}
+      {% endfor %}
+</ul>
+</div>

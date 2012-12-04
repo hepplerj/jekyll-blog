@@ -60,8 +60,8 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in Sublime Text..."
-    system "subl #{path}"
+    puts "Now opening #{path} in MacVim..."
+    system "mvim #{path}"
 end
 
 desc "give title as argument and create new post"
@@ -83,8 +83,8 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in Sublime Text..."
-    system "subl #{path}"
+    puts "Now opening #{path} in MacVim..."
+    system "mvim #{path}"
 end
 
 desc "give title as argument for draft post"
@@ -105,6 +105,6 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in Sublime Text..."
-    system "subl #{path}"
+    puts "Now opening #{path} in MacVim..."
+    system "mvim #{path}"
 end
