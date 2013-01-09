@@ -6,6 +6,7 @@ tags:
 - productivity
 - skim
 - applescript
+category: hacks
 ---
 On [a recent episode](http://www.70decibels.com/generational/2012/11/10/009-research-materials-and-tools-with-walton-jones.html) of [Gabe Weatherhead's](http://www.macdrifter.com) Generational podcast he spoke with [Walton Jones](http://drosophiliac.com), professor of Behavioral Neurobiology at Korea Advanced Institute of Science and Technology. They talk about Professor Jones' system for annotating and summarizing academic papers about twenty minutes into the podcast. He's further detailed his [academic workflow on his blog](http://drosophiliac.com/2012/09/an-academic-notetaking-workflow.html), so be sure to give his explanation a read.
 

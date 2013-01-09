@@ -1,0 +1,17 @@
+---
+layout: default
+title: Hacks
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>I prefer plain text where ever possible and write scripts to make my workflow fit my needs. The posts here reflect my attempt to integrate plain text into my academic workflow as well as discuss programming in the humanities and its application to research.</p>
+
+<ul class="listing">
+{% for post in site.categories.hacks %}
+    <li>
+    	<span>{{ post.date | date: "%B %e, %Y" | ordinalize  }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>    
+{% endfor %}
+</ul>

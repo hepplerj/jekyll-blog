@@ -2,33 +2,32 @@
 layout: default
 ---
 
-{% if page.external-url %}
+<h1>{{ page.title }}</h1>
 
-<div id="entry-link" class="post">
-  <h2><a href="{{ page.external-url }}">{{ page.title }}</a> →</h2>
-  <div id="post_content">
-    {{ content }}
-  </div>
-  
-  <p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}} • <a href="http://jasonheppler.org{{ post.url }}">∞</a></time></p>
-  
+{{ content }} <p class="when"> &#8212; {{ page.date | date: "%B %e, %Y" | ordinalize }}</p>
 
-{% else %}
-<div id="post-{{ id }}" class="post">
-  <h2>{{ page.title }}</h2>
-  <p><time>{{ page.date | date: "%e" | ordinalize }} {{page.date | date: "%B"}} {{page.date | date: "%Y"}}</time></p>
-  <div id="post_content">
-    {{ content }}
+<section class="meta">
+  <div class="block">
+  	<a href="http://acomp.stanford.edu/faculty/atsp">
+  		<span class="ss-like ss-social-circle">
+  			<div>I am the Academic Technology Specialist in the History Department at Stanford University.</div>
+  		</span>
+  	</a>
   </div>
 
-{% endif %}
+  <div class="block">
+  	<a href="http://twitter.com/jaheppler">
+  		<span class="ss-twitter ss-social-circle">
+  			<div>Follow me on Twitter.</div>
+  		</span>
+  	</a>
+  </div>
 
-<p class="tweet-me">Have anything to add? <a href="http://twitter.com/jaheppler">Tweet</a> at me.</p>
-
-<ul class="tag_list">
-{% for tag in page.tags %}
-#<li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
-{% endfor %}
-</ul>
-
-</div>
+  <div class="block">
+  	<a href="http://github.com/hepplerj">
+  		<span class="ss-github ss-social-circle">
+  			<div>Follow me on Github.</div>
+  		</span>
+  	</a>
+  </div>
+</section>

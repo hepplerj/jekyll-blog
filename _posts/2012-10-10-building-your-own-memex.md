@@ -4,6 +4,7 @@ title: Building Your Own Memex
 date: 2012-10-10 23:43:21
 tags:
 - productivity
+category: hacks
 ---
 *[This post originally appeared at [Gradhacker](http://www.gradhacker.org/2012/10/10/building-your-own-memex/) on 2012-10-10]*
 

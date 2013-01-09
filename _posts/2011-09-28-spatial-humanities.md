@@ -5,7 +5,7 @@ date: Wed Sep 28 10:10:25 -0500 2011
 tags:
 - unl-dhs
 - spatial-humanities
-category: Original
+category: research
 ---
 
 *[This is a reading reflection written for HIST946: Digital Humanities with

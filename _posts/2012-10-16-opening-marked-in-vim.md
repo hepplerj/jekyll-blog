@@ -5,7 +5,7 @@ date: 2012-10-16 17:01:51
 tags:
 - vim
 - marked
-category: Original
+category: hacks
 ---
 
 I am a big fan of [Brett Terpstra's Marked.app](http://markedapp.com/) for previewing Markdown documents. I wanted a way to launch Marked from within vim so I can preview what I'm writing as I am working. The task is easy. In your <code>.vimrc</code> file, add the line:

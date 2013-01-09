@@ -6,7 +6,7 @@ date: Thu Oct 20 10:52:40 -0500 2011
 tags:
 - unl-dhs
 - digital-humanities
-category: Original
+category: research
 ---
 
 *[This is a reading reflection for HIST946: Digital Humanities with Professor William

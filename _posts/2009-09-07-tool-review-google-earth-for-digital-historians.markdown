@@ -7,7 +7,7 @@ tags:
 - review
 - spatial-humanities
 - google
-category: Review
+category: teaching
 ---
 <em>[Review cross-posted at <a href="http://digitalhistory.unl.edu/t-reviews/geheppler.html">Digital History</a> and originally written in HIST 970: Digital History.]</em>
 

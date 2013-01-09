@@ -7,7 +7,7 @@ wordpress_url: http://www.jasonheppler.org/?p=651
 tags:
 - programming
 - ruby
-category: Original
+category: research
 ---
 Our last segment introduced us to Ruby methods and classes.  This section will introduce you to expressions and loops. Loops are, put simply, a test of whether an expression is true or false. This is the basic way that computer's operate: continue following a set of instructions until the expression becomes true, then end or move on to the next set of instructions.<!--more-->
 
@@ -130,7 +130,7 @@ Blocks contains a chunk of code normally enclosed between braces or within <code
 sum = 0
 
 [2, 4, 6, 8].each do |value|
-    square == value * value
+    square = value * value
     sum += square
 end 
 
@@ -152,3 +152,5 @@ As extra reading, I would check out Steve Ramsay's <a href="http://etext.lib.vir
 <em>See something that's wrong?  Examples that don't work?  Explanations that are unclear or confusing?  Embarrassing typographic errors?  Drop me an email at jason.heppler+feedback at gmail and I'll fix things right up!</em>
 
 <em>Topic structure, examples, and explanations for the Rubyist Historian are inspired by, credited to, and drawn from Stephen Ramsay and his course Electronic Text.</em>
+
+**UPDATE 2012-12-21**: Thanks to Brooke Lester for pointing out a typo in the final code example. The problem has been corrected.

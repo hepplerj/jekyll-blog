@@ -1,0 +1,31 @@
+---
+layout: default
+title: Research
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>My work generally centers on twentieth century political and cultural American history. The thread of my work tends to focus on political and cultural change, race relations, urban history, political culture, and the North American West. Posts collected here are items related to my research projects. Material relating to research workflows and programming can be found in the <a href="hacks.html">Hacks</a> section. See also my <a href="http://jasonheppler.org/jah-vita.pdf">curriculum vita</a> and <a href="projects.html">Projects</a> page for more academic information.</p>
+
+<h2>Dissertation</h2>
+
+<p>My dissertation research focuses on urban history in the North American West during the Cold War, where I examines how urban change shaped political and social identities where the digital economy came to exert influence on a place. I am specifically looking at a comparative history of Palo Alto, California, and Salt Lake City, Utah, and how economic development that accompanied information capitalism displaced people.</p>
+
+<h2>William F. "Buffalo Bill" Cody</h2>
+
+<p>In January 2011 I joined the <a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities</a> to serve as the project manager on the <a href="http://codyarchive.org">William F. Cody Digital Archive</a>, a joint project of CDRH and the Papers of William F. Cody. Prior to joining CDRH, I served as a digital research editor and conducted original research and digitization that culminated in <a href="http://segonku.unl.edu/~jheppler/showindian/">Buffalo Bill's Wild West and the Progressive Image of American Indians</a>. The project is currently being reworked into a new project that will undergo peer review by an academic journal.</p>
+
+<h2>American Indian Movement</h2>
+
+<p>I have done prior work on the American Indian Movement (AIM), a Native American activist organization that started in the late 1960s. My Masters thesis examined media coverage of AIM during the Trail of Broken Treaties Caravan, which was a march on Washington D.C. in 1972 meant to draw attention to issues facing reservation and urban Indians. My Masters thesis is available as open access and can be <a href="http://digitalcommons.unl.edu/historydiss/21/">downloaded from UNL Digital Commons</a>. I also contributed a chapter to <em><a href="http://www.sdshspress.com/index.php?&id=236&action=912">The Plains Political Tradition: Essays on South Dakota Political Culture</a></em> about AIM's influence upon South Dakota politics. The book was published in 2011 by the South Dakota State Historical Society Press.</p>
+
+<h2>Posts</h2>
+
+<ul class="listing">
+{% for post in site.categories.research %}
+    <li>
+    	<span>{{ post.date | date: "%B %e, %Y" | ordinalize  }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>    
+{% endfor %}
+</ul>

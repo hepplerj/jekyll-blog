@@ -9,7 +9,7 @@ tags:
 - digitalhistory
 - research
 - scholarship
-category: Original
+category: research
 ---
 
 *[In lieu of a reading reflection this week for HIST946: Digital Humanities, Prof. Thomas asked us to speculate on how we might incorporate digital humanities into our research agendas. Although unrelated to my dissertation work, I am still examining aspects of Buffalo Bill's Wild West and his employment of Native Americans. You can find related posts [here](http://jasonheppler.org/the-digital-humanities-seminar.html).]*

@@ -7,44 +7,38 @@
 <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/tweet.css" type="text/css" />
+<link href="/webfonts/ss-social.css" rel="stylesheet" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://jasonheppler.org/js/footnote-popup.js"></script>
-<!-- <script type="text/javascript" src="http://jasonheppler.org/js/projects.js"></script> -->
 <script type="text/javascript" src="http://jasonheppler.org/js/styleTweets.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
 {% include analytics.html %}
 
 </head>
 <body>
 
-<div id="wrap">
+	<div id="access">
+		<ul>
+			<li><a href="/">Jason Heppler</a></li>
+			<li><a href="{{ base_url }}/about.html">Colophon</a></li>
+			<li><a href="{{ base_url }}/research.html">Research</a></li>
+			<li><a href="{{ base_url }}/teaching.html">Teaching</a></li>
+			<li><a href="{{ base_url }}/hacks.html">Hacks</a></li>
+			<li><a href="{{ base_url }}/projects.html">Projects</a></li>
+			<li><a href="http://blog.jasonheppler.org">Clippings</a></li>
+			<li><a href="http://jasonheppler.org/jah-vita.pdf">Vita</a></li>
+		</ul>
+	</div>
 
-<div id="access">
-	<ul>
-		<li><a href="/">Jason Heppler</a></li>
-		<li><a href="blog.html">Blog</a></li>
-		<li><a href="archives.html">Archive</a></li>
-		<li><a href="http://projects.jasonheppler.org">Projects</a></li>
-		<li><a href="http://twitter.com/jaheppler">Twitter</a></li>
-		<li><a href="http://jasonheppler.org/jah-vita.pdf">CV</a></li>
-</div>
-
-<div id="main-content">
-	<article>
-		
-		{{ content }}
+<section class="container content">		
+{{ content }}
+</section>
 	
-	</article>
-
-	<footer>
-		Tech, history, code, coffee • Written by <a href="http://jasonheppler.org/about.html">Jason Heppler</a> • Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> <br/> Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a> • <a href="http://www.jasonheppler.org/feed.xml">Subscribe to RSS</a>
-	</footer>
-
-</div>
-</div>
+<footer>
+	Tech, history, code, coffee • Written by <a href="http://jasonheppler.org/about.html">Jason Heppler</a> • Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> <br/> Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a> • <a href="http://www.jasonheppler.org/feed.xml">Subscribe to RSS</a>
+</footer>
 
 </body>
 </html>

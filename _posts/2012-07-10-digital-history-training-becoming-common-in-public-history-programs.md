@@ -5,7 +5,7 @@ external-url: http://publichistorycommons.org/the-future-is-here-public-history-
 date: 2012-07-10 16:25:38
 tags:
 - digital history
-category: Link
+category: teaching
 ---
 [Steven Burg notes that digital history training is becoming more common](http://publichistorycommons.org/the-future-is-here-public-history-education-and-the-rise-of-digital-history/) among public history programs:
 
