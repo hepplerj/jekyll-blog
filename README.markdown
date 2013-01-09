@@ -5,12 +5,12 @@ The site runs on [Jekyll](https://github.com/mojombo/jekyll).
 
 # Source Structure #
 
-> ├── _includes   globally included files
-> │   ├── analytics.html
-> ├── _layouts
-> │   ├── default.html
-> │   └── post.html
-> ├── _posts
+> ├── _includes   globally included files  
+> │   ├── analytics.html  
+> ├── _layouts  
+> │   ├── default.html  
+> │   └── post.html  
+> ├── _posts  
 > ├── css
 
 # Deployment Process #
