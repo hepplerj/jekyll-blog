@@ -14,7 +14,7 @@ Several of my snippets are used for research and writing, and rarely a day goes 
 
 <!--more-->
 
-## Tables
+### Tables
 
 Everything I write is written in Markdown or its more feature-rich variants, [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) or [Pandoc-style](http://johnmacfarlane.net/pandoc/) (Pandown?). I mentioned in my last post on using Markdown that I keep a TextExpander snippet for creating a simple Markdown table that I can start working with. 
 
@@ -22,19 +22,19 @@ Everything I write is written in Markdown or its more feature-rich variants, [Mu
 
 Although it doesn't look so above, the script spits out a nicely formatted Markdown table in monospaced font that's ready for my input.
 
-## Images
+### Images
 
 I use a snippet to embed Markdown images, taking advantage of TextExpander's fill-in forms to insert the image title and path. I type <code>mmimg</code> and it's ready for my input. 
 
 ![Markdown images](http://farm9.staticflickr.com/8207/8245649273_68511aaa2c.jpg "Markdown images")
 
-## Autocorrection
+### Autocorrection
 
 I place many autocorrections into TextExpander to relieve me of having to remember how something has been stylized. For example, is the formatting THATCamp? ThatCamp? THATcamp? I have a snippet to input the correct format every time. Same for LaTeX (which is always difficult to type), MacBook, DEVONthink, and Van Hœt ([So.](https://twitter.com/karlvanhoet)).
 
 ![Markdown autocorrect](http://farm9.staticflickr.com/8482/8246717454_50c207e493.jpg "Markdown autocorrect")
 
-## Ipsum Text
+### Ipsum Text
 
 I don't need lorem ipsum placeholder text very often, but when I do I use a script to generate random gibberish instead of using the Latin gibberish normally found in ipsum text. Inspired by [this script by Dr. Drang](http://www.leancrew.com/all-this/2011/12/mechanics-lipsum/), the snippet generates random ipsum text on the fly from Walter Benjamin's 1936 essay "[The Work of Art in the Age of Mechanical Reproduction](http://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm)." It results in text that looks like this:
 
@@ -44,7 +44,7 @@ I don't need lorem ipsum placeholder text very often, but when I do I use a scri
 
 ![Ipsum text](http://farm9.staticflickr.com/8202/8245649133_5bd9f05f66.jpg "Ipsum text")
 
-## Code and Filesystem
+### Code and Filesystem
 
 I use TextExpander to made some areas of writing code and navigating the filesystem easier. You could add frequently used blocks of code or something as simple as hashbangs for programming languages, for example:
 
@@ -54,7 +54,7 @@ Borrowing from Brett Terpstra, I also use snippets to make it easier to navigate
 
 ![Filesystem](http://farm9.staticflickr.com/8209/8245648965_aefe5b8352.jpg "Filesystem")
 
-## Notes and Metadata
+### Notes and Metadata
 
 I've recently begun using Gitit to organize research material, inspired by W. Caleb McDaniel's newest project. There are a few areas of using Gitit where I've decided to make it easier to insert metadata information. Gitit, for example, supports metadata in its pages. At the moment, the two metadata features I use are "table of contents" and "categories." To save me some typing, I created a snippet:
 
@@ -64,7 +64,7 @@ I've also been moving my citation management to BibTeX. Most of my BibTeX materi
 
 ![BibTeX](http://farm9.staticflickr.com/8487/8245648719_813417c803.jpg "BibTeX")
 
-## Snippet Design
+### Snippet Design
 
 A final note: why do most of my snippets start with the semicolon? This comes down to personal preference (for example, Ryan Cordell uses capitalizations in places where there aren't usually capitals, Brett Terpstra uses double commas). I like the semicolon for two main reasons:
 
