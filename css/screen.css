@@ -13,8 +13,8 @@ body {
 	padding: 0;
 	font-weight: 100;
 	font: 16px/1.875 'Lato', sans-serif;
-	background: #fafafa;
-	color: #34495e;
+	background: #f5f5f5;
+	color: #545454;
 }
 
 ::selection {
@@ -110,7 +110,7 @@ pre::-webkit-scrollbar-track-piece {
 
 code {
 	border: 1px solid #ddd;
-	background-color: #BDC3C7;
+	background-color: #eee;
 	padding: 0.2em;
 }
 
