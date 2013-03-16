@@ -30,11 +30,11 @@ b, strong {
 
 a:link {
     text-decoration: none;
-    color: steelblue;
+    color: #fd8507;
 }
 a:visited {
 	text-decoration: none;
-    color: steelblue;
+    color: #fd8507;
 }
 a:hover {
     text-decoration: underline;
@@ -175,6 +175,18 @@ sup {
 	margin: 0 auto;
 }
 
+.container a {
+	border-bottom: 1px solid #b4b3b3;
+	padding-bottom: 1px;
+	color: #314451;
+	text-decoration: none;
+}
+
+.container a:hover {
+	color: #0f3647;
+	border-bottom: 2px solid #fd8507;
+}
+
 section.content p {
 	line-height: 175%;
 	margin: 25px 0;
@@ -183,6 +195,7 @@ section.content p {
 
 #entry-post h2 a {
 	color: #333;
+	border: none;
 }
 
 .listing {
@@ -258,7 +271,7 @@ footer {
 }
 
 #access li:first-child {
-	border-right: 2px solid steelblue;
+	border-right: 2px solid #fd8507;
 	padding-left: 0;
 	margin-left: 0;
 }
@@ -367,6 +380,11 @@ p.meta {
 	font-size: 45px;
 	color: #555;
 	text-decoration: none;
+	border: none;
+}
+
+.post_meta a:hover {
+	border: none;
 }
 
 .post_meta .block div {
