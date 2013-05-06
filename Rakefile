@@ -33,13 +33,13 @@ end
 desc "watch the site and regenerate when it changes"
 task :watch do
   puts "Starting to watch source with Jekyll."
-  system "jekyll --server --auto"
+  system "jekyll serve --watch"
 end
 
 desc "preview site in browser with localhost:4000"
-task :preview do
+task :serve do
   puts "Starting site preview in http://localhost:4000."
-  system "jekyll --server"
+  system "jekyll serve"
 end
 
 desc "give title as argument and create new post"
@@ -60,8 +60,8 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in MacVim..."
-    system "mvim #{path}"
+    puts "Now opening #{path} in vim..."
+    system "vim #{path}"
 end
 
 desc "give title as argument and create new post"
@@ -83,8 +83,8 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in MacVim..."
-    system "mvim #{path}"
+    puts "Now opening #{path} in vim..."
+    system "vim #{path}"
 end
 
 desc "give title as argument for draft post"
@@ -105,6 +105,6 @@ tags:
 ---
 EOS
     end
-    puts "Now opening #{path} in MacVim..."
-    system "mvim #{path}"
+    puts "Now opening #{path} in vim..."
+    system "vim #{path}"
 end
