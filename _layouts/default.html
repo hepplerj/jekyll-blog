@@ -9,10 +9,8 @@
 <link rel="stylesheet" href="/css/tweet.css" type="text/css" />
 <link href="/webfonts/ss-social.css" rel="stylesheet" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://jasonheppler.org/js/footnote-popup.js"></script>
 <script type="text/javascript" src="http://jasonheppler.org/js/styleTweets.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 
 {% include analytics.html %}
@@ -20,16 +18,18 @@
 </head>
 <body>
 
-	<div id="access">
-		<ul>
-			<li><a href="/">Jason Heppler</a></li>
+<div class="header">
+	<div class="header_container">
+		<section class="name"><a href="/">Jason<span>Heppler</span></a></section>
+		<ul class="menu">
 			<li><a href="{{ base_url }}/about.html">Colophon</a></li>
 			<li><a href="{{ base_url }}/research.html">Research</a></li>
 			<li><a href="{{ base_url }}/teaching.html">Teaching</a></li>
 			<li><a href="{{ base_url }}/hacks.html">Digital &amp; Public History</a></li>
-			<li><a href="{{ base_url }}/projects.html">Projects</a></li>
 			<li><a href="http://jasonheppler.org/jah-vita.pdf">Vita</a></li>
+		</ul>
 	</div>
+</div>
 
 <section class="container content">
 {{ content }}

@@ -3,8 +3,9 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
+<p class="when">{{ page.date | date: "%B %e, %Y" | ordinalize }}</p>
 
-{{ content }} <p class="when"> &#8212; {{ page.date | date: "%B %e, %Y" | ordinalize }}</p>
+{{ content }}
 
 <section class="post_meta">
   <div class="block">
