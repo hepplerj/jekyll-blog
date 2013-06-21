@@ -9,13 +9,13 @@
 /* elements */
 
 body {
-	margin: 0;
+	margin: 1em auto 4em auto;
 	padding: 0;
-	font-weight: 400;
-    font: 1.15em/1.875 "PT Sans", Helvetica, Arial, sans-serif;
-	line-height: 1.6em;
-	background: white;
-	color: #4a4235;
+	/*font-weight: 400;*/
+  font-family: "PT Serif", serif;
+	/*line-height: 1.6em;*/
+	/*background: white;*/
+	color: #333;
 }
 
 ::selection {
@@ -81,16 +81,14 @@ hr:after {
 }
 
 pre, code {
-    font: 13px Consolas,'Andale Mono', Monaco, Courier, 'Courier New', monospace;
+    font-family: "Menlo", monospace;
 }
 
 pre {
 	line-height: 16px;
-	overflow-x: auto;
-	border: 1px solid #d5d5d5;
-	border-left: 10px solid #d5d5d5;
-	background-color: #fafafa;
-	padding: 11px 15px 12px;
+	border-left: solid 2px #ccc;
+	margin: 2em 0 2em -20px;
+	padding-left: 18px;
 }
 
 pre::-webkit-scrollbar {
@@ -122,27 +120,36 @@ pre code {
 
 /*h1,h2,h3,h4,h5,h6{font-weight:bold;text-rendering:optimizeLegibility}h1{font-size:3em;line-height:1;margin-bottom:0.5em}h2{font-size:2em;margin-bottom:0.5em}h3{font-size:1.5em;line-height:1;margin-bottom:1em}h4{font-size:1.5em;line-height:1.25;margin:1.5em 0 0.5em}h5{font-size:1.4em;margin-bottom:0.5em}h6{font-size:1.2em}h6+p{margin-top:1em}*/
 
-h1, h2 {
-	font-size: 22px;
-	font-weight: 400;
-	line-height: 30px;
-	margin-bottom: 18px;
+h1, h2, h3, h4, h5, h6, aside {
+	font-family: 'PT Sans', sans-serif;
 }
 
-h3 {
-	font-size: 18px;
+h1 {
+	font-size: 64px;
+	font-weight: 300;
+	letter-spacing: -2px;
+	margin: .3em 0 .1em 0;
+}
+
+h2 {
+	margin-top: 2em;
+}
+
+h1, h2, h3, h4, aside {
+	text-rendering: optimizeLegibility;
+}
+
+/*h3 {
 	line-height: 30px;
-	font-weight: bold;
 	padding-top: 36px;
 	margin-bottom: 18px;
 }
 
 h4 {
-	font-size: 14px;
 	line-height: 18px;
 	margin-top: 30px;
 	padding-bottom: 6px;
-}
+}*/
 
 /*
 h1, h2, h3, h4, h5 {
@@ -198,11 +205,11 @@ sup a {
 /* html5 */
 
 .container {
-	width: 720px;
+	width: 760px;
 	margin: 0 auto;
 }
 
-.container a {
+/*.container a {
 	border-bottom: 1px solid #b4b3b3;
 	padding-bottom: 1px;
 	color: steelblue;
@@ -212,7 +219,7 @@ sup a {
 .container a:hover {
 	color: #0f3647;
 	border-bottom: 2px solid steelblue;
-}
+}*/
 
 aside {
 	font-size: small;
@@ -248,6 +255,7 @@ aside {
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #999;
+	font-family: 'PT Sans', sans-serif;
 }
 
 .hero {
@@ -259,26 +267,21 @@ aside {
 box-shadow: inset 0 0 30px rgba(0,0,0,.79);
 }
 
-.when {
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #999;
-}
-
 time {
 	color: #828282;
 }
 
 footer {
 	padding: 2em 0 1em 0;
-	color: #BDC3C7;
+	/*color: #BDC3C7;*/
 	clear: both;
 	font-size: 70%;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
-	background: #2b2b2b;
-    line-height: 1.4em;
+	/*background: #2b2b2b;*/
+  line-height: 1.4em;
+  font-family: 'PT Sans', sans-serif;
 }
 
 #access {
@@ -296,7 +299,7 @@ footer {
 
 .menu a {
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.2em;
 	border-bottom: none;
 	color: #828282;
 }
@@ -306,17 +309,19 @@ footer {
 }
 
 .header_container {
-	width: 650px;
+	width: 750px;
 	margin: 0 auto;
 }
 
 .header {
 	margin: 30px 0 35px 0;
+	font-family: 'PT Sans', sans-serif;
+	text-rendering: optimizeLegibility;
 }
 
 .header a {
 	color: #444;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-decoration: none;
 	border: none;
 	font-size: 30px;
@@ -442,14 +447,18 @@ p.meta {
 }
 
 .intro {
-	margin-top: 3em;
-	margin-bottom: 3em;
-	padding-bottom: 3em;
-	text-align: center;
+	text-align: left;
 }
 
 .intro p {
 	font-size: 18px;
+}
+
+.preview {
+	border: 1px solid #ccc;
+	height: 80px;
+	margin-bottom: .5em;
+	width: 720px;
 }
 
 /*.header a {
