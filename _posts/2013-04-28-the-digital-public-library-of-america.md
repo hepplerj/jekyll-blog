@@ -16,7 +16,7 @@ DPLA not only makes available the material, but becomes an advocate for the open
 
 I've been playing with DPLA all morning, and there are three areas of DPLA I'm thinking about today:
 
-### Teaching
+## Teaching
 
 Without a doubt, access to material in DPLA presents a wonderful pedagogical opportunity. Material that could have been difficult to access or unknown to students now has the ability to be discovered. Research projects that require working with primary sources now have another starting point for research, in addition to the tools we already use in our work. A research project on American civil rights movements might start with a keyword search on Malcolm X, which pulls in sources and metadata from collections at Yale, Utah State Historical Society, the University of Illinois-Urbana, and elsewhere.
 
@@ -30,7 +30,7 @@ Discovery doesn't have to be serendipitous either. Courses on the history of civ
 
 <a href="https://www.stanford.edu/group/ats/cgi-bin/hivetalkin/wp-content/uploads/2013/04/mkl_speech.jpg"><img class="aligncenter size-medium wp-image-3337" src="https://www.stanford.edu/group/ats/cgi-bin/hivetalkin/wp-content/uploads/2013/04/mkl_speech-300x236.jpg" alt="" width="300" height="236" /></a>
 
-### Research
+## Research
 
 DPLA has already been giving a place in my bookmark folder that contains my go-to places for research, alongside ProQuest, Google, and JSTOR. DPLA serves a similar purpose as research databases by aggregating diverse collections together under a single interface. Scholars and students alike have a variety of methods for drilling down into the material by narrowing on categories like location, date, and repositories. Subject tags also allow me to explore other avenues and similarly-categorized material.
 
@@ -38,7 +38,7 @@ Already, in the short amount of time I've spent with the DPLA, I've explored som
 
 <a href="https://www.stanford.edu/group/ats/cgi-bin/hivetalkin/wp-content/uploads/2013/04/bracero_research.jpg"><img class="aligncenter size-medium wp-image-3339" src="https://www.stanford.edu/group/ats/cgi-bin/hivetalkin/wp-content/uploads/2013/04/bracero_research-300x236.jpg" alt="" width="300" height="236" /></a>
 
-### Building
+## Building
 
 I haven't dug deeply into this yet, but DPLA <a href="http://dp.la/info/developers/">provides an API</a> for those who want to build platforms to take advantage of the DPLA's collections. <a href="http://dp.la/apps/1">Harvard</a> and <a href="http://dp.la/apps/2">Europeana</a> have already built impressive apps using the API. DPLA sees itself as a platform, and developers have an opportunity to make use of the available data and explore cultural heritage collections. DPLA itself is open source, and has placed <a href="https://github.com/dpla">all of its code on Github</a> already.
 
